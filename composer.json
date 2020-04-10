@@ -1,5 +1,5 @@
 {
-    "name": "tuneuptechnology/tuneuptechnology-php",
+    "name": "ncr4/tuneuptechnology-php",
     "description": "The PHP client library for the Tuneup Technology App.",
     "keywords": ["tuneup", "technology", "app", "client", "library", "php"],
     "homepage": "https://github.com/ncr4/tuneuptechnology-php",

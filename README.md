@@ -7,7 +7,7 @@ The PHP client library allows you to interact with the customers, tickets, inven
 ## Install
 
 ```bash
-composer require tuneuptechnology/tuneuptechnology-php
+composer require ncr4/tuneuptechnology-php
 ```
 
 ## Example
