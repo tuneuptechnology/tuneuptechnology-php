@@ -1,5 +1,3 @@
-.DS_Store
-bin
 vendor
+bin
 .phplint-cache
-.php_cs.cache

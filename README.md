@@ -2,15 +2,15 @@
 
 The PHP client library for the Tuneup Technology App.
 
-[![Build Status](https://travis-ci.com/ncr4/tuneuptechnology-php.svg?branch=master)](https://travis-ci.com/ncr4/tuneuptechnology-php)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Build Status](https://github.com/tuneuptechnology/tuneuptechnology-php/workflows/build/badge.svg)](https://github.com/tuneuptechnology/tuneuptechnology-php/actions)
+[![Licence](https://img.shields.io/github/license/tuneuptechnology/tuneuptechnology-php)](https://opensource.org/licenses/mit-license.php)
 
 The PHP client library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer::create` and pass some data and let the library do the rest.
 
 ## Install
 
 ```bash
-composer require ncr4/tuneuptechnology-php
+composer require tuneuptechnology/tuneuptechnology-php
 ```
 
 ## Example

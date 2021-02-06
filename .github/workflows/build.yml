@@ -1,0 +1,20 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+      - name: Install Composer
+        run: composer self-update
+      - name: Install Dependencies
+        run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+      - name: Lint
+        run: ./bin/phplint ./src ./examples
