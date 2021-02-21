@@ -15,7 +15,7 @@ class Customer
     public static function create($data)
     {
         $endpoint = "customers/create";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -28,7 +28,7 @@ class Customer
     {
         $id = $data['id'];
         $endpoint = "customers/$id";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -40,7 +40,7 @@ class Customer
     public static function all($data)
     {
         $endpoint = "customers";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -53,7 +53,7 @@ class Customer
     {
         $id = $data['id'];
         $endpoint = "customers/$id/update";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -66,6 +66,6 @@ class Customer
     {
         $id = $data['id'];
         $endpoint = "customers/$id/delete";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 }

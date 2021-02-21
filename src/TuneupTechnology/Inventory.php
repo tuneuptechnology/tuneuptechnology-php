@@ -15,7 +15,7 @@ class Inventory
     public static function create($data)
     {
         $endpoint = "inventory/create";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -28,7 +28,7 @@ class Inventory
     {
         $id = $data['id'];
         $endpoint = "inventory/$id";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -40,7 +40,7 @@ class Inventory
     public static function all($data)
     {
         $endpoint = "inventory";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -53,7 +53,7 @@ class Inventory
     {
         $id = $data['id'];
         $endpoint = "inventory/$id/update";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -66,6 +66,6 @@ class Inventory
     {
         $id = $data['id'];
         $endpoint = "inventory/$id/delete";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 }

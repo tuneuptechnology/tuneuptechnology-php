@@ -15,7 +15,7 @@ class Ticket
     public static function create($data)
     {
         $endpoint = "tickets/create";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -28,7 +28,7 @@ class Ticket
     {
         $id = $data['id'];
         $endpoint = "tickets/$id";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -40,7 +40,7 @@ class Ticket
     public static function all($data)
     {
         $endpoint = "tickets";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -53,7 +53,7 @@ class Ticket
     {
         $id = $data['id'];
         $endpoint = "tickets/$id/update";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -66,6 +66,6 @@ class Ticket
     {
         $id = $data['id'];
         $endpoint = "tickets/$id/delete";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 }

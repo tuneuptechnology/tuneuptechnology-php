@@ -11,18 +11,19 @@ class Client
      * @param string $endpoint
      * @return mixed
      */
-    public static function response($data, $endpoint)
+    public static function make_http_request($data, $endpoint)
     {
         // Setup variables
         $base_url = "https://app.tuneuptechnology.com/api";
         $url = "$base_url/$endpoint";
-        $version = "1.0.0";
+        $version = "1.1.0";
     
         // Setup cURL
         $request = curl_init($url);
         curl_setopt($request, CURLOPT_POST, true);
         curl_setopt($request, CURLOPT_POSTFIELDS, json_encode($data));
         curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($request, CURLOPT_TIMEOUT, 10);
 
         // Setup headers
         curl_setopt($request, CURLOPT_HTTPHEADER, [

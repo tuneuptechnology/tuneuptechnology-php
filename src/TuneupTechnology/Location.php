@@ -15,7 +15,7 @@ class Location
     public static function create($data)
     {
         $endpoint = "locations/create";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -28,7 +28,7 @@ class Location
     {
         $id = $data['id'];
         $endpoint = "locations/$id";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -40,7 +40,7 @@ class Location
     public static function all($data)
     {
         $endpoint = "locations";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -53,7 +53,7 @@ class Location
     {
         $id = $data['id'];
         $endpoint = "locations/$id/update";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 
     /**
@@ -66,6 +66,6 @@ class Location
     {
         $id = $data['id'];
         $endpoint = "locations/$id/delete";
-        return Client::response($data, $endpoint);
+        return Client::make_http_request($data, $endpoint);
     }
 }
