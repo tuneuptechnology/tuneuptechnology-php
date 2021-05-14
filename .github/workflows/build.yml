@@ -31,8 +31,8 @@ jobs:
         with:
           php-version: ${{ matrix.php_version }}
       - name: Install Composer
-        run: cd src && composer self-update
+        run: composer self-update
       - name: Install Dependencies
-        run: cd src && composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+        run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
       - name: Test
-        run: cd src && ./bin/phpunit
+        run: ./bin/phpunit
