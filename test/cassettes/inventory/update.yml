@@ -1,0 +1,59 @@
+
+-
+    request:
+        method: PATCH
+        url: 'http://tuneapp.localhost/api/inventory/1'
+        headers:
+            Host: ''
+            Expect: ''
+            Accept-Encoding: ''
+            Content-Type: application/json
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+        body: '{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":19.99,"location_id":1,"quantity":1}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"id":1,"name":"Inventory Item","quantity":1,"created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:20","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":19.99,"location_id":1},"message":"Inventory updated successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/inventory/1'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 433
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.148578
+            namelookup_time: 0.000759
+            connect_time: 0.000875
+            pretransfer_time: 0.0009
+            size_upload: !!float 159
+            size_download: !!float 307
+            speed_download: !!float 2074
+            speed_upload: !!float 1074
+            download_content_length: !!float 307
+            upload_content_length: !!float 159
+            starttransfer_time: 0.148563
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52213
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 875
+            namelookup_time_us: 759
+            pretransfer_time_us: 900
+            redirect_time_us: 0
+            starttransfer_time_us: 148563
+            total_time_us: 148578

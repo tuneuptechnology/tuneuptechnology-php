@@ -1,0 +1,56 @@
+
+-
+    request:
+        method: GET
+        url: 'http://tuneapp.localhost/api/locations'
+        headers:
+            Host: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"current_page":1,"data":[{"id":1,"name":"Connelly-Hickle","street":"30949 Susan Terrace","city":"Eberttown","state":"WI","zip":"34888","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null},{"id":2,"name":"Moore-Hammes","street":"287 Maida Trail","city":"Ethylville","state":"ND","zip":"7195","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null},{"id":3,"name":"Raynor-Armstrong","street":"851 Brayan Isle","city":"Brownfurt","state":"AR","zip":"77472","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null},{"id":4,"name":"Veum-Sanford","street":"956 Emmitt Creek Apt. 162","city":"Port Hymanburgh","state":"AR","zip":"35589","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null},{"id":5,"name":"Glover PLC","street":"4827 Abbott Track","city":"West Jadachester","state":"VT","zip":"18694","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null},{"id":6,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-05-14 03:19:20","updated_at":"2021-05-14 03:19:20","deleted_at":null}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/locations","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Locations retrieved successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/locations'
+            content_type: application/json
+            http_code: 200
+            header_size: 235
+            request_size: 217
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.133683
+            namelookup_time: 0.000669
+            connect_time: 0.000774
+            pretransfer_time: 0.000794
+            size_upload: !!float 0
+            size_download: !!float 1557
+            speed_download: !!float 11706
+            speed_upload: !!float 0
+            download_content_length: !!float 1557
+            upload_content_length: !!float 0
+            starttransfer_time: 0.133664
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52217
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 774
+            namelookup_time_us: 669
+            pretransfer_time_us: 794
+            redirect_time_us: 0
+            starttransfer_time_us: 133664
+            total_time_us: 133683

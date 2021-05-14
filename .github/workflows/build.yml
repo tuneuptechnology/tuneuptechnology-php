@@ -17,4 +17,22 @@ jobs:
       - name: Install Dependencies
         run: composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
       - name: Lint
-        run: ./bin/phplint ./src ./examples
+        run: ./bin/phpcs
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php_version: [7.2, 7.3, 7.4, 8.0]
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php_version }}
+      - name: Install Composer
+        run: cd src && composer self-update
+      - name: Install Dependencies
+        run: cd src && composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+      - name: Test
+        run: cd src && ./bin/phpunit

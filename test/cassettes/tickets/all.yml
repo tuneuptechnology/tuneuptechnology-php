@@ -1,0 +1,56 @@
+
+-
+    request:
+        method: GET
+        url: 'http://tuneapp.localhost/api/tickets'
+        headers:
+            Host: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"current_page":1,"data":[{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"870922","user_id":1,"notes":"Omnis quas reiciendis iusto quisquam praesentium cumque et.","title":"Est consequatur quis delectus et quibusdam quaerat.","status":1,"created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null,"device":"iPhone 12","imei":"579597","location_id":1},{"id":2,"customer_id":1,"ticket_type_id":1,"serial":"236263","user_id":1,"notes":"Amet tempora quidem sit quas tempora sed facere.","title":"Aut debitis perferendis sed quia ducimus qui.","status":1,"created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null,"device":"iPhone 12","imei":"667699","location_id":1},{"id":3,"customer_id":1,"ticket_type_id":1,"serial":"430084","user_id":1,"notes":"Est similique hic velit quia ratione vero magnam.","title":"Inventore et consequatur et eos odio ut modi.","status":1,"created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null,"device":"iPhone 12","imei":"661699","location_id":1},{"id":4,"customer_id":1,"ticket_type_id":1,"serial":"9813","user_id":1,"notes":"Dolor eveniet enim inventore.","title":"Dignissimos quae asperiores aut fugit.","status":1,"created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null,"device":"iPhone 12","imei":"462648","location_id":1},{"id":5,"customer_id":1,"ticket_type_id":1,"serial":"490398","user_id":1,"notes":"Facilis rerum excepturi enim velit molestiae.","title":"Qui voluptatem hic dolor in non.","status":1,"created_at":"2021-05-14 03:19:01","updated_at":"2021-05-14 03:19:01","deleted_at":null,"device":"iPhone 12","imei":"226058","location_id":1},{"id":6,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"created_at":"2021-05-14 03:19:21","updated_at":"2021-05-14 03:19:21","deleted_at":null,"device":"2","imei":"10000","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/tickets","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Tickets retrieved successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/tickets'
+            content_type: application/json
+            http_code: 200
+            header_size: 241
+            request_size: 215
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.127621
+            namelookup_time: 0.000671
+            connect_time: 0.000774
+            pretransfer_time: 0.000795
+            size_upload: !!float 0
+            size_download: !!float 2306
+            speed_download: !!float 18157
+            speed_upload: !!float 0
+            download_content_length: !!float -1
+            upload_content_length: !!float 0
+            starttransfer_time: 0.127605
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52222
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 774
+            namelookup_time_us: 671
+            pretransfer_time_us: 795
+            redirect_time_us: 0
+            starttransfer_time_us: 127605
+            total_time_us: 127621

@@ -1,0 +1,59 @@
+
+-
+    request:
+        method: POST
+        url: 'http://tuneapp.localhost/api/inventory'
+        headers:
+            Host: ''
+            Expect: ''
+            Accept-Encoding: ''
+            Content-Type: application/json
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+        body: '{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":19.99,"location_id":1,"quantity":1}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":19.99,"location_id":1,"quantity":1,"updated_at":"2021-05-14 03:19:19","created_at":"2021-05-14 03:19:19","id":6},"message":"Inventory created successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/inventory'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 430
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.193115
+            namelookup_time: 0.000667
+            connect_time: 0.000796
+            pretransfer_time: 0.000823
+            size_upload: !!float 159
+            size_download: !!float 289
+            speed_download: !!float 1497
+            speed_upload: !!float 823
+            download_content_length: !!float 289
+            upload_content_length: !!float 159
+            starttransfer_time: 0.193099
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52210
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 796
+            namelookup_time_us: 667
+            pretransfer_time_us: 823
+            redirect_time_us: 0
+            starttransfer_time_us: 193099
+            total_time_us: 193115

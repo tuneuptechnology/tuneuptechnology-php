@@ -2,17 +2,8 @@
 
 require 'vendor/autoload.php';
 
-// Setup API credentials
-$api_email = getenv("API_EMAIL");
-$api_key = getenv("API_KEY");
+$client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"));
 
-// Retrieve a single customer by ID
-$customer = \TuneupTechnology\Customer::retrieve(
-    $data = [
-        'auth'      => $api_email,
-        'api_key'   => $api_key,
-        'id'        => 23,
-    ]
-);
+$customer = $client->customers->retrieve(23);
 
-echo $customer;
+echo $customer->getBody();

@@ -1,0 +1,56 @@
+
+-
+    request:
+        method: GET
+        url: 'http://tuneapp.localhost/api/locations/1'
+        headers:
+            Host: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"id":1,"name":"Connelly-Hickle","street":"30949 Susan Terrace","city":"Eberttown","state":"WI","zip":"34888","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null},"message":"Location retrieved successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/locations/1'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 219
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.121836
+            namelookup_time: 0.00062
+            connect_time: 0.000722
+            pretransfer_time: 0.000743
+            size_upload: !!float 0
+            size_download: !!float 252
+            speed_download: !!float 2082
+            speed_upload: !!float 0
+            download_content_length: !!float 252
+            upload_content_length: !!float 0
+            starttransfer_time: 0.121821
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52216
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 722
+            namelookup_time_us: 620
+            pretransfer_time_us: 743
+            redirect_time_us: 0
+            starttransfer_time_us: 121821
+            total_time_us: 121836

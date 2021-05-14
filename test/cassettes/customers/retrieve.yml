@@ -1,0 +1,56 @@
+
+-
+    request:
+        method: GET
+        url: 'http://tuneapp.localhost/api/customers/1'
+        headers:
+            Host: ''
+            Accept-Encoding: ''
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"id":1,"firstname":"Chelsey Ryan","lastname":"Rick Simonis MD","email":"wuckert.estel@example.org","phone":"8018981234","user_id":1,"notes":"Eveniet sunt et id impedit nobis.","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:00","deleted_at":null,"location_id":1},"message":"Customer retrieved successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/customers/1'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 219
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.127698
+            namelookup_time: 0.001032
+            connect_time: 0.001185
+            pretransfer_time: 0.001212
+            size_upload: !!float 0
+            size_download: !!float 335
+            speed_download: !!float 2637
+            speed_upload: !!float 0
+            download_content_length: !!float 335
+            upload_content_length: !!float 0
+            starttransfer_time: 0.127683
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52206
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 1185
+            namelookup_time_us: 1032
+            pretransfer_time_us: 1212
+            redirect_time_us: 0
+            starttransfer_time_us: 127683
+            total_time_us: 127698

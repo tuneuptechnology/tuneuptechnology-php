@@ -1,0 +1,59 @@
+
+-
+    request:
+        method: POST
+        url: 'http://tuneapp.localhost/api/customers'
+        headers:
+            Host: ''
+            Expect: ''
+            Accept-Encoding: ''
+            Content-Type: application/json
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+        body: '{"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes he is a good detective.","location_id":2}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        body: '{"data":{"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes he is a good detective.","location_id":2,"updated_at":"2021-05-14 03:19:18","created_at":"2021-05-14 03:19:18","id":6},"message":"Customer created successfully."}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/customers'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 431
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.751479
+            namelookup_time: 0.001995
+            connect_time: 0.00217
+            pretransfer_time: 0.00224
+            size_upload: !!float 160
+            size_download: !!float 289
+            speed_download: !!float 384
+            speed_upload: !!float 213
+            download_content_length: !!float 289
+            upload_content_length: !!float 160
+            starttransfer_time: 0.751452
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 52205
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 2170
+            namelookup_time_us: 1995
+            pretransfer_time_us: 2240
+            redirect_time_us: 0
+            starttransfer_time_us: 751452
+            total_time_us: 751479

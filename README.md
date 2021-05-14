@@ -10,7 +10,11 @@ The PHP client library allows you to interact with the customers, tickets, inven
 ## Install
 
 ```bash
+# Install the client library
 composer require tuneuptechnology/tuneuptechnology-php
+
+# Install locally
+composer install
 ```
 
 ## Example
@@ -51,6 +55,19 @@ API_EMAIL=email@example.com API_KEY=123... php create-customer.php
 ## Documentation
 
 Up-to-date documentation can be [found here](https://app.tuneuptechnology.com/docs/api).
+
+## Development
+
+```bash
+# Lint project
+./bin/phpcs
+
+# Run tests
+./bin/phpunit
+```
+
+### Recording VCR Cassettes
+* To re-record cassettes, you may need to [remove this line](https://github.com/php-vcr/php-vcr/blob/989fdcad482d830890757b8165127ed0183de41b/src/VCR/Util/HttpClient.php#L26) from the vendored PHP-VCR package. See [this GitHub issue](https://github.com/php-vcr/php-vcr/issues/349) for more details.
 
 ## Releasing
 
