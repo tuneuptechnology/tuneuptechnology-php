@@ -14,7 +14,7 @@ class InventoryTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $inventory = $client->inventory->create(
+        $response = $client->inventory->create(
             $data = [
                 "name" => "Inventory Item",
                 "inventory_type_id" => 1,
@@ -27,7 +27,7 @@ class InventoryTest extends TestCase
             ]
         );
 
-        $this->assertEquals($inventory->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -40,9 +40,9 @@ class InventoryTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $inventory = $client->inventory->retrieve(1);
+        $response = $client->inventory->retrieve(1);
 
-        $this->assertEquals($inventory->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -55,9 +55,9 @@ class InventoryTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $inventory = $client->inventory->all();
+        $response = $client->inventory->all();
 
-        $this->assertEquals($inventory->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -70,7 +70,7 @@ class InventoryTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $inventory = $client->inventory->update(
+        $response = $client->inventory->update(
             $id = 1,
             $data = [
                 "name" => "Inventory Item",
@@ -84,7 +84,7 @@ class InventoryTest extends TestCase
             ]
         );
 
-        $this->assertEquals($inventory->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -97,8 +97,8 @@ class InventoryTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $inventory = $client->inventory->delete(1);
+        $response = $client->inventory->delete(1);
 
-        $this->assertEquals($inventory->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 }

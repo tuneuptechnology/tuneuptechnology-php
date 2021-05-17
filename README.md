@@ -22,26 +22,21 @@ composer install
 ```php
 require 'vendor/autoload.php';
 
-// Setup API credentials
-$api_email = getenv("API_EMAIL");
-$api_key = getenv("API_KEY");
+$client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"));
 
-// Create a customer with all required data
-$customer = \TuneupTechnology\Customer::create(
+$customer = $client->customers->create(
     $data = [
-        'auth'          => $api_email,
-        'api_key'       => $api_key,
         "firstname"     => "Jake",
-        "lastname"      => "Smith",
-        "email"         => "jsmith@gmail.com",
+        "lastname"      => "Peralta",
+        "email"         => "jake@example.com",
         "phone"         => "8015551234",
         "user_id"       => 1,
-        "notes"         => "here are some notes",
-        "location_id"   => 1
+        "notes"         => "Believes he is a good detective.",
+        "location_id"   => 2,
     ]
 );
 
-echo $customer;
+echo $customer->getBody();
 ```
 
 Other examples can be found in the `/examples` directory. Alter according to your needs.
@@ -68,6 +63,7 @@ Up-to-date documentation can be [found here](https://app.tuneuptechnology.com/do
 
 ### Recording VCR Cassettes
 * To re-record cassettes, you may need to [remove this line](https://github.com/php-vcr/php-vcr/blob/989fdcad482d830890757b8165127ed0183de41b/src/VCR/Util/HttpClient.php#L26) from the vendored PHP-VCR package. See [this GitHub issue](https://github.com/php-vcr/php-vcr/issues/349) for more details.
+* `php-vcr` does not provide native scrubbing out of the box. This means the the `Email` and `Api-Key` header values will be saved to cassettes. Ensure these are local values and not values that are used in production. You can view [this GitHub issue](https://github.com/allejo/php-vcr-sanitizer/issues/22)
 
 ## Releasing
 

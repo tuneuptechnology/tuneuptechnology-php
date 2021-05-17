@@ -19,7 +19,4 @@ VCRCleaner::enable(array(
             'Api-Key',
         ),
     ),
-    'response' => array(
-        'ignoreHeaders' => array('*'),
-    ),
 ));

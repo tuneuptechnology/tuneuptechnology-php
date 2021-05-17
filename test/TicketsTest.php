@@ -1,7 +1,6 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use TuneupTechnology\Client;
 
 class TicketsTest extends TestCase
 {
@@ -15,7 +14,7 @@ class TicketsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $ticket = $client->tickets->create(
+        $response = $client->tickets->create(
             $data = [
                 "customer_id" => 2,
                 "ticket_type_id" => 1,
@@ -30,7 +29,7 @@ class TicketsTest extends TestCase
             ]
         );
 
-        $this->assertEquals($ticket->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -43,9 +42,9 @@ class TicketsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $ticket = $client->tickets->retrieve(1);
+        $response = $client->tickets->retrieve(1);
 
-        $this->assertEquals($ticket->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -58,9 +57,9 @@ class TicketsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $ticket = $client->tickets->all();
+        $response = $client->tickets->all();
 
-        $this->assertEquals($ticket->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -73,7 +72,7 @@ class TicketsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $ticket = $client->tickets->update(
+        $response = $client->tickets->update(
             $id = 1,
             $data = [
                 "customer_id" => 2,
@@ -89,7 +88,8 @@ class TicketsTest extends TestCase
             ]
         );
 
-        $this->assertEquals($ticket->getStatusCode(), 200);
+        echo $response;
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -102,8 +102,8 @@ class TicketsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $ticket = $client->tickets->delete(1);
+        $response = $client->tickets->delete(1);
 
-        $this->assertEquals($ticket->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 }

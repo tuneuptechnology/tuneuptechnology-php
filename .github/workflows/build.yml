@@ -22,14 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php_version: [7.2, 7.3, 7.4, 8.0]
+        php-version: [7.2, 7.3, 7.4, 8.0]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: ${{ matrix.php_version }}
+          php-version: ${{ matrix.php-version }}
       - name: Install Composer
         run: composer self-update
       - name: Install Dependencies

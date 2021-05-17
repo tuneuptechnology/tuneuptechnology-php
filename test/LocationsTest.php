@@ -14,7 +14,7 @@ class LocationsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $location = $client->locations->create(
+        $response = $client->locations->create(
             $data = [
                 "name" => "Location Name",
                 "street" => "123 California Ave",
@@ -24,7 +24,7 @@ class LocationsTest extends TestCase
             ]
         );
 
-        $this->assertEquals($location->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -37,9 +37,9 @@ class LocationsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $location = $client->locations->retrieve(1);
+        $response = $client->locations->retrieve(1);
 
-        $this->assertEquals($location->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -52,9 +52,9 @@ class LocationsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $location = $client->locations->all();
+        $response = $client->locations->all();
 
-        $this->assertEquals($location->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -67,7 +67,7 @@ class LocationsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $location = $client->locations->update(
+        $response = $client->locations->update(
             $id = 1,
             $data = [
                 "name" => "Location Name",
@@ -78,7 +78,7 @@ class LocationsTest extends TestCase
             ]
         );
 
-        $this->assertEquals($location->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
@@ -91,8 +91,8 @@ class LocationsTest extends TestCase
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $location = $client->locations->delete(1);
+        $response = $client->locations->delete(1);
 
-        $this->assertEquals($location->getStatusCode(), 200);
+        $this->assertEquals($response->getStatusCode(), 200);
     }
 }
