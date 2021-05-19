@@ -88,7 +88,6 @@ class TicketsTest extends TestCase
             ]
         );
 
-        echo $response;
         $this->assertEquals($response->getStatusCode(), 200);
     }
 

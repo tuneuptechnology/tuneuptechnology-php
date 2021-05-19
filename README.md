@@ -62,7 +62,6 @@ Up-to-date documentation can be [found here](https://app.tuneuptechnology.com/do
 ```
 
 ### Recording VCR Cassettes
-* To re-record cassettes, you may need to [remove this line](https://github.com/php-vcr/php-vcr/blob/989fdcad482d830890757b8165127ed0183de41b/src/VCR/Util/HttpClient.php#L26) from the vendored PHP-VCR package. See [this GitHub issue](https://github.com/php-vcr/php-vcr/issues/349) for more details.
 * `php-vcr` does not provide native scrubbing out of the box. This means the the `Email` and `Api-Key` header values will be saved to cassettes. Ensure these are local values and not values that are used in production. You can view [this GitHub issue](https://github.com/allejo/php-vcr-sanitizer/issues/22)
 
 ## Releasing

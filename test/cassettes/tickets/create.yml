@@ -4,7 +4,7 @@
         method: POST
         url: 'http://tuneapp.localhost/api/tickets'
         headers:
-            Host: ''
+            Host: tuneapp.localhost
             Expect: ''
             Accept-Encoding: ''
             Content-Type: application/json
@@ -18,7 +18,16 @@
             http_version: '1.1'
             code: '200'
             message: OK
-        body: '{"data":{"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"device":"2","imei":10000,"location_id":2,"updated_at":"2021-05-14 03:19:21","created_at":"2021-05-14 03:19:21","id":6},"message":"Ticket created successfully."}'
+        headers:
+            Cache-Control: 'no-cache, private'
+            Content-Type: application/json
+            Date: 'Wed, 19 May 2021 05:32:57 GMT'
+            Server: nginx
+            X-Powered-By: PHP/7.4.15
+            X-Ratelimit-Limit: '60'
+            X-Ratelimit-Remaining: '44'
+            Content-Length: '297'
+        body: '{"data":{"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"device":"2","imei":10000,"location_id":2,"updated_at":"2021-05-19 05:32:57","created_at":"2021-05-19 05:32:57","id":6},"message":"Ticket created successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/tickets'
             content_type: application/json
@@ -28,32 +37,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.679905
-            namelookup_time: 0.000869
-            connect_time: 0.001033
-            pretransfer_time: 0.001071
+            total_time: 0.146165
+            namelookup_time: 0.000709
+            connect_time: 0.000843
+            pretransfer_time: 0.00087
             size_upload: !!float 170
             size_download: !!float 297
-            speed_download: !!float 437
-            speed_upload: !!float 250
+            speed_download: !!float 2034
+            speed_upload: !!float 1164
             download_content_length: !!float 297
             upload_content_length: !!float 170
-            starttransfer_time: 0.679883
+            starttransfer_time: 0.146144
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 52220
+            local_port: 51745
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 1033
-            namelookup_time_us: 869
-            pretransfer_time_us: 1071
+            connect_time_us: 843
+            namelookup_time_us: 709
+            pretransfer_time_us: 870
             redirect_time_us: 0
-            starttransfer_time_us: 679883
-            total_time_us: 679905
+            starttransfer_time_us: 146144
+            total_time_us: 146165

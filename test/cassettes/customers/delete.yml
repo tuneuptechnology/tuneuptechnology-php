@@ -4,7 +4,7 @@
         method: DELETE
         url: 'http://tuneapp.localhost/api/customers/1'
         headers:
-            Host: ''
+            Host: tuneapp.localhost
             Accept-Encoding: ''
             Accept: application/json
             User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
@@ -15,7 +15,16 @@
             http_version: '1.1'
             code: '200'
             message: OK
-        body: '{"data":{"id":1,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes he is a good detective.","created_at":"2021-05-14 03:19:00","updated_at":"2021-05-14 03:19:19","deleted_at":"2021-05-14 03:19:19","location_id":2},"message":"Customer deleted successfully."}'
+        headers:
+            Cache-Control: 'no-cache, private'
+            Content-Type: application/json
+            Date: 'Wed, 19 May 2021 05:32:56 GMT'
+            Server: nginx
+            X-Powered-By: PHP/7.4.15
+            X-Ratelimit-Limit: '60'
+            X-Ratelimit-Remaining: '55'
+            Content-Length: '324'
+        body: '{"data":{"id":1,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes he is a good detective.","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:32:56","deleted_at":"2021-05-19 05:32:56","location_id":2},"message":"Customer deleted successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/customers/1'
             content_type: application/json
@@ -25,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.183654
-            namelookup_time: 0.00067
-            connect_time: 0.000776
-            pretransfer_time: 0.000797
+            total_time: 0.116051
+            namelookup_time: 0.000648
+            connect_time: 0.00075
+            pretransfer_time: 0.00077
             size_upload: !!float 0
             size_download: !!float 324
-            speed_download: !!float 1770
+            speed_download: !!float 2793
             speed_upload: !!float 0
             download_content_length: !!float 324
             upload_content_length: !!float 0
-            starttransfer_time: 0.183634
+            starttransfer_time: 0.116036
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 52209
+            local_port: 51734
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 776
-            namelookup_time_us: 670
-            pretransfer_time_us: 797
+            connect_time_us: 750
+            namelookup_time_us: 648
+            pretransfer_time_us: 770
             redirect_time_us: 0
-            starttransfer_time_us: 183634
-            total_time_us: 183654
+            starttransfer_time_us: 116036
+            total_time_us: 116051
