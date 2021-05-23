@@ -18,13 +18,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Wed, 19 May 2021 05:32:57 GMT'
+            Date: 'Sun, 23 May 2021 05:05:54 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
             X-Ratelimit-Remaining: '45'
             Content-Length: '264'
-        body: '{"data":{"id":1,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:32:57","deleted_at":"2021-05-19 05:32:57"},"message":"Location deleted successfully."}'
+        body: '{"data":{"id":1,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:54","deleted_at":"2021-05-23 05:05:54"},"message":"Location deleted successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/locations/1'
             content_type: application/json
@@ -34,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.126071
-            namelookup_time: 0.000598
-            connect_time: 0.000705
-            pretransfer_time: 0.000726
+            total_time: 0.607165
+            namelookup_time: 0.000603
+            connect_time: 0.000735
+            pretransfer_time: 0.000764
             size_upload: !!float 0
             size_download: !!float 264
-            speed_download: !!float 2095
+            speed_download: !!float 434
             speed_upload: !!float 0
             download_content_length: !!float 264
             upload_content_length: !!float 0
-            starttransfer_time: 0.126055
+            starttransfer_time: 0.607149
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 51744
+            local_port: 49965
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 705
-            namelookup_time_us: 598
-            pretransfer_time_us: 726
+            connect_time_us: 735
+            namelookup_time_us: 603
+            pretransfer_time_us: 764
             redirect_time_us: 0
-            starttransfer_time_us: 126055
-            total_time_us: 126071
+            starttransfer_time_us: 607149
+            total_time_us: 607165

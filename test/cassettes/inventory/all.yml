@@ -18,13 +18,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Wed, 19 May 2021 05:32:56 GMT'
+            Date: 'Sun, 23 May 2021 05:05:53 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
             X-Ratelimit-Remaining: '52'
-            Content-Length: '2044'
-        body: '{"data":{"current_page":1,"data":[{"id":1,"name":"enim","quantity":"5","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"inventory_type_id":1,"part_number":"531232","sku":"785766","notes":"Dignissimos temporibus provident earum reiciendis et modi voluptates.","part_price":null,"location_id":1},{"id":2,"name":"sit","quantity":"8","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"inventory_type_id":1,"part_number":"704958","sku":"526825","notes":"Veritatis ut sed consequatur enim.","part_price":null,"location_id":1},{"id":3,"name":"molestiae","quantity":"9","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"inventory_type_id":1,"part_number":"641129","sku":"307529","notes":"Adipisci totam minus est porro laboriosam dignissimos qui.","part_price":null,"location_id":1},{"id":4,"name":"est","quantity":"8","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"inventory_type_id":1,"part_number":"979924","sku":"470539","notes":"Nostrum est non molestiae doloribus porro perspiciatis qui enim.","part_price":null,"location_id":1},{"id":5,"name":"doloremque","quantity":"6","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"inventory_type_id":1,"part_number":"818451","sku":"170314","notes":"Ut rerum ea repellendus eius.","part_price":null,"location_id":1},{"id":6,"name":"Inventory Item","quantity":"1","created_at":"2021-05-19 05:32:56","updated_at":"2021-05-19 05:32:56","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":"19.99","location_id":1}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Inventory retrieved successfully."}'
+            Content-Length: '2009'
+        body: '{"data":{"current_page":1,"data":[{"id":1,"name":"et","quantity":"7","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"237091","sku":"133367","notes":"Quos ipsam nihil est eveniet tempora fuga voluptatem.","part_price":null,"location_id":1},{"id":2,"name":"reprehenderit","quantity":"5","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"863963","sku":"587403","notes":"Ut hic eum quidem voluptatum eius fuga fugiat quia.","part_price":null,"location_id":1},{"id":3,"name":"dolorum","quantity":"8","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"580326","sku":"297643","notes":"Tenetur accusamus sunt sequi.","part_price":null,"location_id":1},{"id":4,"name":"delectus","quantity":"4","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"908776","sku":"877659","notes":"Vel aut id et iure assumenda.","part_price":null,"location_id":1},{"id":5,"name":"voluptatem","quantity":"2","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"250990","sku":"585908","notes":"Asperiores nemo tempora et eveniet eveniet et.","part_price":null,"location_id":1},{"id":6,"name":"Inventory Item","quantity":"1","created_at":"2021-05-23 05:05:53","updated_at":"2021-05-23 05:05:53","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":"19.99","location_id":1}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Inventory retrieved successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/inventory'
             content_type: application/json
@@ -34,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.119738
-            namelookup_time: 0.00064
-            connect_time: 0.000758
-            pretransfer_time: 0.0008
+            total_time: 0.109326
+            namelookup_time: 0.000651
+            connect_time: 0.00077
+            pretransfer_time: 0.000793
             size_upload: !!float 0
-            size_download: !!float 2044
-            speed_download: !!float 17176
+            size_download: !!float 2009
+            speed_download: !!float 18431
             speed_upload: !!float 0
-            download_content_length: !!float 2044
+            download_content_length: !!float 2009
             upload_content_length: !!float 0
-            starttransfer_time: 0.11972
+            starttransfer_time: 0.109304
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 51737
+            local_port: 49957
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 758
-            namelookup_time_us: 640
-            pretransfer_time_us: 800
+            connect_time_us: 770
+            namelookup_time_us: 651
+            pretransfer_time_us: 793
             redirect_time_us: 0
-            starttransfer_time_us: 119720
-            total_time_us: 119738
+            starttransfer_time_us: 109304
+            total_time_us: 109326

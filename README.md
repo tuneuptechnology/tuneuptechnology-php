@@ -3,6 +3,8 @@
 The PHP client library for the Tuneup Technology App.
 
 [![Build Status](https://github.com/tuneuptechnology/tuneuptechnology-php/workflows/build/badge.svg)](https://github.com/tuneuptechnology/tuneuptechnology-php/actions)
+[![Coverage Status](https://coveralls.io/repos/github/tuneuptechnology/tuneuptechnology-php/badge.svg?branch=main)](https://coveralls.io/github/tuneuptechnology/tuneuptechnology-php?branch=main)
+[![Packagist](https://img.shields.io/packagist/v/tuneuptechnology/tuneuptechnology-php)](https://packagist.org/packages/tuneuptechnology/tuneuptechnology-php)
 [![Licence](https://img.shields.io/github/license/tuneuptechnology/tuneuptechnology-php)](https://opensource.org/licenses/mit-license.php)
 
 The PHP client library allows you to interact with the customers, tickets, inventory, and locations objects without needing to do the hard work of binding your calls and data to endpoints. Simply call an action such as `Customer::create` and pass some data and let the library do the rest.
@@ -55,14 +57,11 @@ Up-to-date documentation can be [found here](https://app.tuneuptechnology.com/do
 
 ```bash
 # Lint project
-./bin/phpcs
+composer lint
 
 # Run tests
-./bin/phpunit
+composer test
 ```
-
-### Recording VCR Cassettes
-* `php-vcr` does not provide native scrubbing out of the box. This means the the `Email` and `Api-Key` header values will be saved to cassettes. Ensure these are local values and not values that are used in production. You can view [this GitHub issue](https://github.com/allejo/php-vcr-sanitizer/issues/22)
 
 ## Releasing
 

@@ -1,6 +1,9 @@
 <?php
 
+namespace TuneupTechnology\Tests;
+
 use PHPUnit\Framework\TestCase;
+use TuneupTechnology;
 
 class LocationsTest extends TestCase
 {

@@ -18,13 +18,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Wed, 19 May 2021 05:32:57 GMT'
+            Date: 'Sun, 23 May 2021 05:05:54 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
             X-Ratelimit-Remaining: '43'
-            Content-Length: '402'
-        body: '{"data":{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"169909","user_id":1,"notes":"Iste animi voluptas perferendis odio iure consectetur animi ab.","title":"Asperiores non ea adipisci est voluptas.","status":1,"created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"device":"iPhone 12","imei":"234967","location_id":1},"message":"Ticket retrieved successfully."}'
+            Content-Length: '360'
+        body: '{"data":{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"839270","user_id":1,"notes":"Dolor quos non doloribus.","title":"Ipsa et nihil atque expedita quidem.","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"device":"iPhone 12","imei":"945819","location_id":1},"message":"Ticket retrieved successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/tickets/1'
             content_type: application/json
@@ -34,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.128268
-            namelookup_time: 0.000593
-            connect_time: 0.000704
-            pretransfer_time: 0.00073
+            total_time: 0.104213
+            namelookup_time: 0.000664
+            connect_time: 0.000771
+            pretransfer_time: 0.000792
             size_upload: !!float 0
-            size_download: !!float 402
-            speed_download: !!float 3140
+            size_download: !!float 360
+            speed_download: !!float 3461
             speed_upload: !!float 0
-            download_content_length: !!float 402
+            download_content_length: !!float 360
             upload_content_length: !!float 0
-            starttransfer_time: 0.128219
+            starttransfer_time: 0.104196
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 51746
+            local_port: 49967
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 704
-            namelookup_time_us: 593
-            pretransfer_time_us: 730
+            connect_time_us: 771
+            namelookup_time_us: 664
+            pretransfer_time_us: 792
             redirect_time_us: 0
-            starttransfer_time_us: 128219
-            total_time_us: 128268
+            starttransfer_time_us: 104196
+            total_time_us: 104213

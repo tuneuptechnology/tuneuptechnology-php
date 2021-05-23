@@ -1,29 +1,31 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+namespace TuneupTechnology\Tests;
 
-class InventoryTest extends TestCase
+use PHPUnit\Framework\TestCase;
+use TuneupTechnology;
+
+class CustomersTest extends TestCase
 {
     /**
-     * Test creating an inventory item
+     * Test creating a customer
      *
-     * @vcr inventory/create.yml
+     * @vcr customers/create.yml
      * @return void
      */
     public function testCreate()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->inventory->create(
+        $response = $client->customers->create(
             $data = [
-                "name" => "Inventory Item",
-                "inventory_type_id" => 1,
-                "part_number" => "1234",
-                "sku" => "1234",
-                "notes" => "here are some notes",
-                "part_price" => 19.99,
-                "location_id" => 1,
-                "quantity" => 1
+                "firstname" => "Jake",
+                "lastname" => "Peralta",
+                "email" => "jake@example.com",
+                "phone" => "8015551234",
+                "user_id" => 1,
+                "notes" => "Believes he is a good detective.",
+                "location_id" => 2,
             ]
         );
 
@@ -31,56 +33,55 @@ class InventoryTest extends TestCase
     }
 
     /**
-    * Test retrieving an inventory item
+    * Test retrieving a customer
     *
-    * @vcr inventory/retrieve.yml
+    * @vcr customers/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->inventory->retrieve(1);
+        $response = $client->customers->retrieve(1);
 
         $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
-    * Test retrieving all inventory items
+    * Test retrieving all customers
     *
-    * @vcr inventory/all.yml
+    * @vcr customers/all.yml
     * @return void
     */
     public function testAll()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->inventory->all();
+        $response = $client->customers->all();
 
         $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
-    * Test updating an inventory item
+    * Test updating a customer
     *
-    * @vcr inventory/update.yml
+    * @vcr customers/update.yml
     * @return void
     */
     public function testUpdate()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->inventory->update(
+        $response = $client->customers->update(
             $id = 1,
             $data = [
-                "name" => "Inventory Item",
-                "inventory_type_id" => 1,
-                "part_number" => "1234",
-                "sku" => "1234",
-                "notes" => "here are some notes",
-                "part_price" => 19.99,
-                "location_id" => 1,
-                "quantity" => 1
+                "firstname" => "Jake",
+                "lastname" => "Peralta",
+                "email" => "jake@example.com",
+                "phone" => "8015551234",
+                "user_id" => 1,
+                "notes" => "Believes he is a good detective.",
+                "location_id" => 2,
             ]
         );
 
@@ -88,16 +89,16 @@ class InventoryTest extends TestCase
     }
 
     /**
-    * Test deleting an inventory item
+    * Test deleting a customer
     *
-    * @vcr inventory/delete.yml
+    * @vcr customers/delete.yml
     * @return void
     */
     public function testDelete()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->inventory->delete(1);
+        $response = $client->customers->delete(1);
 
         $this->assertEquals($response->getStatusCode(), 200);
     }

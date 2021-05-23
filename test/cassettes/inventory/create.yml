@@ -21,13 +21,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Wed, 19 May 2021 05:32:56 GMT'
+            Date: 'Sun, 23 May 2021 05:05:53 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
             X-Ratelimit-Remaining: '54'
             Content-Length: '289'
-        body: '{"data":{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":19.99,"location_id":1,"quantity":1,"updated_at":"2021-05-19 05:32:56","created_at":"2021-05-19 05:32:56","id":6},"message":"Inventory created successfully."}'
+        body: '{"data":{"name":"Inventory Item","inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":19.99,"location_id":1,"quantity":1,"updated_at":"2021-05-23 05:05:53","created_at":"2021-05-23 05:05:53","id":6},"message":"Inventory created successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/inventory'
             content_type: application/json
@@ -37,32 +37,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.128777
-            namelookup_time: 0.000669
-            connect_time: 0.000776
-            pretransfer_time: 0.000799
+            total_time: 0.116839
+            namelookup_time: 0.00058
+            connect_time: 0.000688
+            pretransfer_time: 0.000711
             size_upload: !!float 159
             size_download: !!float 289
-            speed_download: !!float 2257
-            speed_upload: !!float 1242
+            speed_download: !!float 2491
+            speed_upload: !!float 1370
             download_content_length: !!float 289
             upload_content_length: !!float 159
-            starttransfer_time: 0.128756
+            starttransfer_time: 0.116819
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 51735
+            local_port: 49955
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 776
-            namelookup_time_us: 669
-            pretransfer_time_us: 799
+            connect_time_us: 688
+            namelookup_time_us: 580
+            pretransfer_time_us: 711
             redirect_time_us: 0
-            starttransfer_time_us: 128756
-            total_time_us: 128777
+            starttransfer_time_us: 116819
+            total_time_us: 116839

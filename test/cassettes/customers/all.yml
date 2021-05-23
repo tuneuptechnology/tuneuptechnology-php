@@ -18,13 +18,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Wed, 19 May 2021 05:32:56 GMT'
+            Date: 'Sun, 23 May 2021 05:05:52 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
             X-Ratelimit-Remaining: '57'
             Transfer-Encoding: chunked
-        body: '{"data":{"current_page":1,"data":[{"id":1,"firstname":"Mariane McDermott","lastname":"Della Legros","email":"hyatt.rene@example.org","phone":"8018981234","user_id":1,"notes":"Rerum eius rerum architecto molestias earum.","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"location_id":1},{"id":2,"firstname":"Dr. Scottie Purdy","lastname":"Emmet Morissette","email":"jtrantow@example.com","phone":"8018981234","user_id":1,"notes":"Sit adipisci enim non atque enim aliquid.","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"location_id":1},{"id":3,"firstname":"Jalyn Bahringer","lastname":"Helen Miller","email":"jade06@example.com","phone":"8018981234","user_id":1,"notes":"Maxime perspiciatis aspernatur omnis magnam veritatis est consectetur eum.","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"location_id":1},{"id":4,"firstname":"Hillard Metz","lastname":"Pascale Cormier","email":"miracle51@example.com","phone":"8018981234","user_id":1,"notes":"Quod consequatur consectetur a repellendus fugiat reiciendis impedit.","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"location_id":1},{"id":5,"firstname":"Prof. Abelardo Wuckert Jr.","lastname":"Mrs. Helene Bosco","email":"kkuphal@example.org","phone":"8018981234","user_id":1,"notes":"Sequi autem dolorum sequi dolorem.","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null,"location_id":1},{"id":6,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes he is a good detective.","created_at":"2021-05-19 05:32:55","updated_at":"2021-05-19 05:32:55","deleted_at":null,"location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Customers retrieved successfully."}'
+        body: '{"data":{"current_page":1,"data":[{"id":1,"firstname":"Miss Clarabelle Lang","lastname":"Earl Wunsch III","email":"flavie.langworth@example.com","phone":"8018981234","user_id":1,"notes":"Et facilis ratione maxime aliquam nisi voluptatem.","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"location_id":1},{"id":2,"firstname":"Edward Kassulke","lastname":"Dr. Ana Homenick","email":"wayne.hegmann@example.net","phone":"8018981234","user_id":1,"notes":"In aut quisquam voluptates.","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"location_id":1},{"id":3,"firstname":"Amalia Bartell","lastname":"Tristin Rath IV","email":"pollich.lennie@example.com","phone":"8018981234","user_id":1,"notes":"Et cumque enim quo autem.","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"location_id":1},{"id":4,"firstname":"Mr. Randall Dooley I","lastname":"Yasmin Quitzon","email":"dbruen@example.net","phone":"8018981234","user_id":1,"notes":"Fugiat unde quisquam laudantium nam ea voluptas dignissimos natus.","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"location_id":1},{"id":5,"firstname":"Mrs. Leslie Jakubowski","lastname":"Dr. Karelle Borer","email":"chad84@example.org","phone":"8018981234","user_id":1,"notes":"Et officiis dolor eaque delectus perferendis omnis inventore ut.","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"location_id":1},{"id":6,"firstname":"Jake","lastname":"Peralta","email":"jake@example.com","phone":"8015551234","user_id":1,"notes":"Believes he is a good detective.","created_at":"2021-05-23 05:05:52","updated_at":"2021-05-23 05:05:52","deleted_at":null,"location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Customers retrieved successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/customers'
             content_type: application/json
@@ -34,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.128805
-            namelookup_time: 0.000618
-            connect_time: 0.000729
-            pretransfer_time: 0.000749
+            total_time: 0.124297
+            namelookup_time: 0.000643
+            connect_time: 0.000748
+            pretransfer_time: 0.000769
             size_upload: !!float 0
-            size_download: !!float 2129
-            speed_download: !!float 16632
+            size_download: !!float 2123
+            speed_download: !!float 17120
             speed_upload: !!float 0
             download_content_length: !!float -1
             upload_content_length: !!float 0
-            starttransfer_time: 0.128783
+            starttransfer_time: 0.124275
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 51732
+            local_port: 49952
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 729
-            namelookup_time_us: 618
-            pretransfer_time_us: 749
+            connect_time_us: 748
+            namelookup_time_us: 643
+            pretransfer_time_us: 769
             redirect_time_us: 0
-            starttransfer_time_us: 128783
-            total_time_us: 128805
+            starttransfer_time_us: 124275
+            total_time_us: 124297

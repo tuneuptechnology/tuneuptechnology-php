@@ -18,8 +18,5 @@
     <arg value="np" />
 
     <!-- Use the PSR12 ruleset -->
-    <rule ref="PSR12">
-        <!-- TODO: Add namespaces to tests -->
-        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
-    </rule>
+    <rule ref="PSR12" />
 </ruleset>

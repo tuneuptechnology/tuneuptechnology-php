@@ -18,13 +18,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Wed, 19 May 2021 05:32:57 GMT'
+            Date: 'Sun, 23 May 2021 05:05:53 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
             X-Ratelimit-Remaining: '47'
-            Content-Length: '1605'
-        body: '{"data":{"current_page":1,"data":[{"id":1,"name":"Kozey, O''Reilly and Kuphal","street":"86888 Cassin Dam","city":"Adalbertoborough","state":"IA","zip":"67524","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null},{"id":2,"name":"Mayer-Sanford","street":"60253 Schaden Point","city":"East Greysonburgh","state":"TN","zip":"35818","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null},{"id":3,"name":"Effertz, Lebsack and Halvorson","street":"94538 Hoeger Court","city":"East Coy","state":"SD","zip":"69804","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null},{"id":4,"name":"Raynor Ltd","street":"24241 Arthur Row","city":"East Jameson","state":"DC","zip":"43317","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null},{"id":5,"name":"Botsford, Wunsch and Carroll","street":"170 Kiera Via Apt. 809","city":"New Vernton","state":"NM","zip":"88553","created_at":"2021-05-19 05:31:45","updated_at":"2021-05-19 05:31:45","deleted_at":null},{"id":6,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-05-19 05:32:57","updated_at":"2021-05-19 05:32:57","deleted_at":null}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/locations","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Locations retrieved successfully."}'
+            Content-Length: '1600'
+        body: '{"data":{"current_page":1,"data":[{"id":1,"name":"McCullough-Ryan","street":"11154 Joanne Road Apt. 187","city":"New Kavonburgh","state":"TN","zip":"26086","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null},{"id":2,"name":"Torp, Gislason and McLaughlin","street":"129 Sim Throughway Apt. 260","city":"West Aglae","state":"ND","zip":"67002","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null},{"id":3,"name":"Tromp, Mohr and Bergnaum","street":"914 Brekke Path","city":"New Wanda","state":"WI","zip":"85861","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null},{"id":4,"name":"Bergnaum-Miller","street":"711 Pascale Inlet","city":"Erdmanshire","state":"IA","zip":"28092","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null},{"id":5,"name":"Douglas-Terry","street":"39335 Bauch Valley","city":"Norwoodborough","state":"DE","zip":"77795","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null},{"id":6,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-05-23 05:05:53","updated_at":"2021-05-23 05:05:53","deleted_at":null}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/locations","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Locations retrieved successfully."}'
         curl_info:
             url: 'http://tuneapp.localhost/api/locations'
             content_type: application/json
@@ -34,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.111012
-            namelookup_time: 0.000639
-            connect_time: 0.000749
-            pretransfer_time: 0.000771
+            total_time: 0.113454
+            namelookup_time: 0.000583
+            connect_time: 0.000691
+            pretransfer_time: 0.000712
             size_upload: !!float 0
-            size_download: !!float 1605
-            speed_download: !!float 14459
+            size_download: !!float 1600
+            speed_download: !!float 14159
             speed_upload: !!float 0
-            download_content_length: !!float 1605
+            download_content_length: !!float 1600
             upload_content_length: !!float 0
-            starttransfer_time: 0.110989
+            starttransfer_time: 0.113437
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 51742
+            local_port: 49963
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 749
-            namelookup_time_us: 639
-            pretransfer_time_us: 771
+            connect_time_us: 691
+            namelookup_time_us: 583
+            pretransfer_time_us: 712
             redirect_time_us: 0
-            starttransfer_time_us: 110989
-            total_time_us: 111012
+            starttransfer_time_us: 113437
+            total_time_us: 113454
