@@ -1,29 +1,32 @@
 <?php
 
-namespace TuneupTechnology\Tests;
+namespace TuneupTechnology;
 
 use PHPUnit\Framework\TestCase;
 use TuneupTechnology;
 
-class LocationsTest extends TestCase
+class InventoryTest extends TestCase
 {
     /**
-     * Test creating a location
+     * Test creating an inventory item
      *
-     * @vcr locations/create.yml
+     * @vcr inventory/create.yml
      * @return void
      */
     public function testCreate()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->locations->create(
+        $response = $client->inventory->create(
             $data = [
-                "name" => "Location Name",
-                "street" => "123 California Ave",
-                "city" => "Salt Lake",
-                "state" => "UT",
-                "zip" => 84043
+                "name" => "Inventory Item",
+                "inventory_type_id" => 1,
+                "part_number" => "1234",
+                "sku" => "1234",
+                "notes" => "here are some notes",
+                "part_price" => 19.99,
+                "location_id" => 1,
+                "quantity" => 1
             ]
         );
 
@@ -31,53 +34,56 @@ class LocationsTest extends TestCase
     }
 
     /**
-    * Test retrieving a location
+    * Test retrieving an inventory item
     *
-    * @vcr locations/retrieve.yml
+    * @vcr inventory/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->locations->retrieve(1);
+        $response = $client->inventory->retrieve(1);
 
         $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
-    * Test retrieving all locations
+    * Test retrieving all inventory items
     *
-    * @vcr locations/all.yml
+    * @vcr inventory/all.yml
     * @return void
     */
     public function testAll()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->locations->all();
+        $response = $client->inventory->all();
 
         $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
-    * Test updating a location
+    * Test updating an inventory item
     *
-    * @vcr locations/update.yml
+    * @vcr inventory/update.yml
     * @return void
     */
     public function testUpdate()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->locations->update(
+        $response = $client->inventory->update(
             $id = 1,
             $data = [
-                "name" => "Location Name",
-                "street" => "123 California Ave",
-                "city" => "Salt Lake",
-                "state" => "UT",
-                "zip" => 84043
+                "name" => "Inventory Item",
+                "inventory_type_id" => 1,
+                "part_number" => "1234",
+                "sku" => "1234",
+                "notes" => "here are some notes",
+                "part_price" => 19.99,
+                "location_id" => 1,
+                "quantity" => 1
             ]
         );
 
@@ -85,16 +91,16 @@ class LocationsTest extends TestCase
     }
 
     /**
-    * Test deleting a location
+    * Test deleting an inventory item
     *
-    * @vcr locations/delete.yml
+    * @vcr inventory/delete.yml
     * @return void
     */
     public function testDelete()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->locations->delete(1);
+        $response = $client->inventory->delete(1);
 
         $this->assertEquals($response->getStatusCode(), 200);
     }

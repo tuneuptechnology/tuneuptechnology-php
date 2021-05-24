@@ -1,34 +1,31 @@
 <?php
 
-namespace TuneupTechnology\Tests;
+namespace TuneupTechnology;
 
 use PHPUnit\Framework\TestCase;
 use TuneupTechnology;
 
-class TicketsTest extends TestCase
+class CustomersTest extends TestCase
 {
     /**
-     * Test creating a ticket
+     * Test creating a customer
      *
-     * @vcr tickets/create.yml
+     * @vcr customers/create.yml
      * @return void
      */
     public function testCreate()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->tickets->create(
+        $response = $client->customers->create(
             $data = [
-                "customer_id" => 2,
-                "ticket_type_id" => 1,
-                "serial" => "10000",
+                "firstname" => "Jake",
+                "lastname" => "Peralta",
+                "email" => "jake@example.com",
+                "phone" => "8015551234",
                 "user_id" => 1,
-                "notes" => "here are some notes",
-                "title" => "Fancy Title",
-                "status" => 1,
-                "device" => "2",
-                "imei" => 10000,
-                "location_id" => 2
+                "notes" => "Believes he is a good detective.",
+                "location_id" => 2,
             ]
         );
 
@@ -36,58 +33,55 @@ class TicketsTest extends TestCase
     }
 
     /**
-    * Test retrieving a ticket
+    * Test retrieving a customer
     *
-    * @vcr tickets/retrieve.yml
+    * @vcr customers/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->tickets->retrieve(1);
+        $response = $client->customers->retrieve(1);
 
         $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
-    * Test retrieving all tickets
+    * Test retrieving all customers
     *
-    * @vcr tickets/all.yml
+    * @vcr customers/all.yml
     * @return void
     */
     public function testAll()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->tickets->all();
+        $response = $client->customers->all();
 
         $this->assertEquals($response->getStatusCode(), 200);
     }
 
     /**
-    * Test updating a ticket
+    * Test updating a customer
     *
-    * @vcr tickets/update.yml
+    * @vcr customers/update.yml
     * @return void
     */
     public function testUpdate()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->tickets->update(
+        $response = $client->customers->update(
             $id = 1,
             $data = [
-                "customer_id" => 2,
-                "ticket_type_id" => 1,
-                "serial" => "10000",
+                "firstname" => "Jake",
+                "lastname" => "Peralta",
+                "email" => "jake@example.com",
+                "phone" => "8015551234",
                 "user_id" => 1,
-                "notes" => "here are some notes",
-                "title" => "Fancy Title",
-                "status" => 1,
-                "device" => "2",
-                "imei" => 10000,
-                "location_id" => 2
+                "notes" => "Believes he is a good detective.",
+                "location_id" => 2,
             ]
         );
 
@@ -95,16 +89,16 @@ class TicketsTest extends TestCase
     }
 
     /**
-    * Test deleting a ticket
+    * Test deleting a customer
     *
-    * @vcr tickets/delete.yml
+    * @vcr customers/delete.yml
     * @return void
     */
     public function testDelete()
     {
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
-        $response = $client->tickets->delete(1);
+        $response = $client->customers->delete(1);
 
         $this->assertEquals($response->getStatusCode(), 200);
     }

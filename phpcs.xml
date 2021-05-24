@@ -6,7 +6,7 @@
     <!-- Where to lint -->
     <file>src</file>
     <file>examples</file>
-    <file>test</file>
+    <file>tests</file>
 
     <!-- What to exclude -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
