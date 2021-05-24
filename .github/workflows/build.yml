@@ -11,7 +11,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.0
+          php-version: 7.4
       - name: Install Composer
         run: composer self-update
       - name: Install Dependencies
@@ -22,7 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-version: [7.2, 7.3, 7.4, 8.0]
+        # Can't build against PHP 8 yet: https://github.com/php-vcr/phpunit-testlistener-vcr/pull/38
+        php-version: [7.2, 7.3, 7.4]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
