@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v2.0.0 (TODO)
+## v2.0.0 (2021-05-23)
 
 * Updates entire library to be compliant with the new `v2` API (endpoints, HTTP methods, etc)
 * The return value of any method is now the `Response` object instead of `json`, now you can retrieve the `status_code` or other details of the response
@@ -8,7 +8,7 @@
 * Added optional `base_url` and `timeout` options to client
 * Module names are now plural
 * The Client now checks if an email and api_key is provided and raises an error if not
-* Bumped dependencies, dropped `php-cs-fixer` and replaced it with `php_codesniffer` and linted project
+* Bumped dependencies (drop php 7.2, adds php 8), dropped `php-cs-fixer` and replaced it with `php_codesniffer` and linted project
 * Added unit tests
 
 ## v1.1.0 (2021-02-20)
