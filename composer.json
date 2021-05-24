@@ -27,7 +27,7 @@
         "allejo/php-vcr-sanitizer": "^1.0.9",
         "php-coveralls/php-coveralls": "^2.4",
         "php-vcr/php-vcr": "^1.5",
-        "phpunit/phpunit": "^9.0",
+        "phpunit/phpunit": "^8.0",
         "squizlabs/php_codesniffer": "^3.0"
     },
     "config": {
