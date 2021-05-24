@@ -3,18 +3,41 @@
 namespace TuneupTechnology;
 
 use PHPUnit\Framework\TestCase;
+use VCR\VCR;
 use TuneupTechnology;
 
 class TicketsTest extends TestCase
 {
     /**
+     * Set up VCR before running tests in this file
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        VCR::turnOn();
+    }
+
+    /**
+     * Spin down VCR after running tests
+     *
+     * @return void
+     */
+    public static function tearDownAfterClass(): void
+    {
+        VCR::eject();
+        VCR::turnOff();
+    }
+
+    /**
      * Test creating a ticket
      *
-     * @vcr tickets/create.yml
      * @return void
      */
     public function testCreate()
     {
+        VCR::insertCassette('tickets/create.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->tickets->create(
@@ -38,11 +61,12 @@ class TicketsTest extends TestCase
     /**
     * Test retrieving a ticket
     *
-    * @vcr tickets/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
+        VCR::insertCassette('tickets/retrieve.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->tickets->retrieve(1);
@@ -53,11 +77,12 @@ class TicketsTest extends TestCase
     /**
     * Test retrieving all tickets
     *
-    * @vcr tickets/all.yml
     * @return void
     */
     public function testAll()
     {
+        VCR::insertCassette('tickets/all.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->tickets->all();
@@ -68,11 +93,12 @@ class TicketsTest extends TestCase
     /**
     * Test updating a ticket
     *
-    * @vcr tickets/update.yml
     * @return void
     */
     public function testUpdate()
     {
+        VCR::insertCassette('tickets/update.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->tickets->update(
@@ -97,11 +123,12 @@ class TicketsTest extends TestCase
     /**
     * Test deleting a ticket
     *
-    * @vcr tickets/delete.yml
     * @return void
     */
     public function testDelete()
     {
+        VCR::insertCassette('tickets/delete.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->tickets->delete(1);

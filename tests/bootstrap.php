@@ -3,9 +3,6 @@
 use VCR\VCR;
 use allejo\VCR\VCRCleaner;
 
-// require __DIR__ . '/../vendor/autoload.php';
-// require_once 'src/TuneupTechnology.php';
-
 if (!file_exists('tests/cassettes')) {
     mkdir('tests/cassettes', 0777, true);
 }

@@ -10,6 +10,7 @@
 
     <!-- What to exclude -->
     <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/bin/*</exclude-pattern>
 
     <!-- Only lint PHP files -->
     <arg name="extensions" value="php" />

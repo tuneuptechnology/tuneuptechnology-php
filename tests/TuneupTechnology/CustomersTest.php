@@ -3,18 +3,41 @@
 namespace TuneupTechnology;
 
 use PHPUnit\Framework\TestCase;
+use VCR\VCR;
 use TuneupTechnology;
 
 class CustomersTest extends TestCase
 {
     /**
+     * Set up VCR before running tests in this file
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        VCR::turnOn();
+    }
+
+    /**
+     * Spin down VCR after running tests
+     *
+     * @return void
+     */
+    public static function tearDownAfterClass(): void
+    {
+        VCR::eject();
+        VCR::turnOff();
+    }
+
+    /**
      * Test creating a customer
      *
-     * @vcr customers/create.yml
      * @return void
      */
     public function testCreate()
     {
+        VCR::insertCassette('customers/create.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->customers->create(
@@ -35,11 +58,12 @@ class CustomersTest extends TestCase
     /**
     * Test retrieving a customer
     *
-    * @vcr customers/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
+        VCR::insertCassette('customers/retrieve.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->customers->retrieve(1);
@@ -50,11 +74,12 @@ class CustomersTest extends TestCase
     /**
     * Test retrieving all customers
     *
-    * @vcr customers/all.yml
     * @return void
     */
     public function testAll()
     {
+        VCR::insertCassette('customers/all.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->customers->all();
@@ -65,11 +90,12 @@ class CustomersTest extends TestCase
     /**
     * Test updating a customer
     *
-    * @vcr customers/update.yml
     * @return void
     */
     public function testUpdate()
     {
+        VCR::insertCassette('customers/update.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->customers->update(
@@ -91,11 +117,12 @@ class CustomersTest extends TestCase
     /**
     * Test deleting a customer
     *
-    * @vcr customers/delete.yml
     * @return void
     */
     public function testDelete()
     {
+        VCR::insertCassette('customers/delete.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->customers->delete(1);

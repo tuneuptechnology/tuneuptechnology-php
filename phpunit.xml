@@ -14,8 +14,4 @@
             <file>src/TuneupTechnology.php</file>
         </exclude>
     </coverage>
-
-    <listeners>
-        <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/php-vcr/phpunit-testlistener-vcr/src/VCRTestListener.php" />
-    </listeners>
 </phpunit>

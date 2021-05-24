@@ -3,18 +3,41 @@
 namespace TuneupTechnology;
 
 use PHPUnit\Framework\TestCase;
+use VCR\VCR;
 use TuneupTechnology;
 
 class InventoryTest extends TestCase
 {
     /**
+     * Set up VCR before running tests in this file
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        VCR::turnOn();
+    }
+
+    /**
+     * Spin down VCR after running tests
+     *
+     * @return void
+     */
+    public static function tearDownAfterClass(): void
+    {
+        VCR::eject();
+        VCR::turnOff();
+    }
+
+    /**
      * Test creating an inventory item
      *
-     * @vcr inventory/create.yml
      * @return void
      */
     public function testCreate()
     {
+        VCR::insertCassette('inventory/create.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->inventory->create(
@@ -36,11 +59,12 @@ class InventoryTest extends TestCase
     /**
     * Test retrieving an inventory item
     *
-    * @vcr inventory/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
+        VCR::insertCassette('inventory/retrieve.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->inventory->retrieve(1);
@@ -51,11 +75,12 @@ class InventoryTest extends TestCase
     /**
     * Test retrieving all inventory items
     *
-    * @vcr inventory/all.yml
     * @return void
     */
     public function testAll()
     {
+        VCR::insertCassette('inventory/all.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->inventory->all();
@@ -66,11 +91,12 @@ class InventoryTest extends TestCase
     /**
     * Test updating an inventory item
     *
-    * @vcr inventory/update.yml
     * @return void
     */
     public function testUpdate()
     {
+        VCR::insertCassette('inventory/update.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->inventory->update(
@@ -93,11 +119,12 @@ class InventoryTest extends TestCase
     /**
     * Test deleting an inventory item
     *
-    * @vcr inventory/delete.yml
     * @return void
     */
     public function testDelete()
     {
+        VCR::insertCassette('inventory/delete.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->inventory->delete(1);

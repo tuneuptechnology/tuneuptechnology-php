@@ -2,5 +2,5 @@ vendor
 bin
 .phplint-cache
 *.cache
-*.xml
+clover.xml
 *.html

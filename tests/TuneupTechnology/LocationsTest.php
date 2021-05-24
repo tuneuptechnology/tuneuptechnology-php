@@ -3,18 +3,41 @@
 namespace TuneupTechnology;
 
 use PHPUnit\Framework\TestCase;
+use VCR\VCR;
 use TuneupTechnology;
 
 class LocationsTest extends TestCase
 {
     /**
+     * Set up VCR before running tests in this file
+     *
+     * @return void
+     */
+    public static function setUpBeforeClass(): void
+    {
+        VCR::turnOn();
+    }
+
+    /**
+     * Spin down VCR after running tests
+     *
+     * @return void
+     */
+    public static function tearDownAfterClass(): void
+    {
+        VCR::eject();
+        VCR::turnOff();
+    }
+
+    /**
      * Test creating a location
      *
-     * @vcr locations/create.yml
      * @return void
      */
     public function testCreate()
     {
+        VCR::insertCassette('locations/create.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->locations->create(
@@ -33,11 +56,12 @@ class LocationsTest extends TestCase
     /**
     * Test retrieving a location
     *
-    * @vcr locations/retrieve.yml
     * @return void
     */
     public function testRetrieve()
     {
+        VCR::insertCassette('locations/retrieve.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->locations->retrieve(1);
@@ -48,11 +72,12 @@ class LocationsTest extends TestCase
     /**
     * Test retrieving all locations
     *
-    * @vcr locations/all.yml
     * @return void
     */
     public function testAll()
     {
+        VCR::insertCassette('locations/all.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->locations->all();
@@ -63,11 +88,12 @@ class LocationsTest extends TestCase
     /**
     * Test updating a location
     *
-    * @vcr locations/update.yml
     * @return void
     */
     public function testUpdate()
     {
+        VCR::insertCassette('locations/update.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->locations->update(
@@ -87,11 +113,12 @@ class LocationsTest extends TestCase
     /**
     * Test deleting a location
     *
-    * @vcr locations/delete.yml
     * @return void
     */
     public function testDelete()
     {
+        VCR::insertCassette('locations/delete.yml');
+
         $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"), 'http://tuneapp.localhost/api');
 
         $response = $client->locations->delete(1);
