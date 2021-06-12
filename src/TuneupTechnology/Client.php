@@ -53,13 +53,13 @@ class Client
                 'json' => $data,
             ]);
         } catch (\GuzzleHttp\Exception\ClientException $error) {
-            return json_decode($error->getResponse()->getBody(), $return=true);
+            return json_decode($error->getResponse()->getBody(), $return = true);
         } catch (\GuzzleHttp\Exception\RequestException $error) {
-            return json_decode($error->getResponse()->getBody(), $return=true);
+            return json_decode($error->getResponse()->getBody(), $return = true);
         } catch (\Exception $error) {
             return $error;
         }
 
-        return json_decode($response->getBody(), $return=true);
+        return json_decode($response->getBody(), $return = true);
     }
 }
