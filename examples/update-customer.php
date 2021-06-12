@@ -17,4 +17,4 @@ $customer = $client->customers->update(
     ]
 );
 
-echo $customer->getBody();
+echo $customer;

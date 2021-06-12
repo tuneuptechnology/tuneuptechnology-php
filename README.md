@@ -14,9 +14,6 @@ The PHP client library allows you to interact with the customers, tickets, inven
 ```bash
 # Install the client library
 composer require tuneuptechnology/tuneuptechnology-php
-
-# Install locally
-composer install
 ```
 
 ## Example
@@ -38,7 +35,7 @@ $customer = $client->customers->create(
     ]
 );
 
-echo $customer->getBody();
+echo $customer;
 ```
 
 Other examples can be found in the `/examples` directory. Alter according to your needs.
@@ -56,11 +53,14 @@ Up-to-date documentation can be [found here](https://app.tuneuptechnology.com/do
 ## Development
 
 ```bash
+# Install locally
+composer install
+
 # Lint project
 composer lint
 
-# Run tests
-composer test
+# Run tests (must be run with PHP 7)
+API_EMAIL=user@example.com API_KEY=123... composer test
 ```
 
 ## Releasing

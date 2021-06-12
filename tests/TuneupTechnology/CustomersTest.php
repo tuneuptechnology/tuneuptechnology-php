@@ -52,7 +52,7 @@ class CustomersTest extends TestCase
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["firstname"], "Jake");
     }
 
     /**
@@ -68,7 +68,7 @@ class CustomersTest extends TestCase
 
         $response = $client->customers->retrieve(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["firstname"]);
     }
 
     /**
@@ -84,7 +84,7 @@ class CustomersTest extends TestCase
 
         $response = $client->customers->all();
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertGreaterThan(1, $response["data"]);
     }
 
     /**
@@ -111,7 +111,7 @@ class CustomersTest extends TestCase
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["firstname"], "Jake");
     }
 
     /**
@@ -127,6 +127,6 @@ class CustomersTest extends TestCase
 
         $response = $client->customers->delete(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["deleted_at"]);
     }
 }

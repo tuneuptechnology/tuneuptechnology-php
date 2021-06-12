@@ -6,4 +6,4 @@ $client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"));
 
 $customer = $client->customers->delete(23);
 
-echo $customer->getBody();
+echo $customer;

@@ -49,13 +49,13 @@ class TicketsTest extends TestCase
                 "notes" => "here are some notes",
                 "title" => "Fancy Title",
                 "status" => 1,
-                "device" => "2",
+                "device" => "iPhone",
                 "imei" => 10000,
                 "location_id" => 2
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["title"], "Fancy Title");
     }
 
     /**
@@ -71,7 +71,7 @@ class TicketsTest extends TestCase
 
         $response = $client->tickets->retrieve(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["title"]);
     }
 
     /**
@@ -87,7 +87,7 @@ class TicketsTest extends TestCase
 
         $response = $client->tickets->all();
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertGreaterThan(1, $response["data"]);
     }
 
     /**
@@ -111,13 +111,13 @@ class TicketsTest extends TestCase
                 "notes" => "here are some notes",
                 "title" => "Fancy Title",
                 "status" => 1,
-                "device" => "2",
+                "device" => "iPhone",
                 "imei" => 10000,
                 "location_id" => 2
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["title"], "Fancy Title");
     }
 
     /**
@@ -133,6 +133,6 @@ class TicketsTest extends TestCase
 
         $response = $client->tickets->delete(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["deleted_at"]);
     }
 }

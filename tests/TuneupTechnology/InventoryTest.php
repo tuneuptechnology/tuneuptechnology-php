@@ -47,13 +47,13 @@ class InventoryTest extends TestCase
                 "part_number" => "1234",
                 "sku" => "1234",
                 "notes" => "here are some notes",
-                "part_price" => 19.99,
+                "part_price" => "19.99",
                 "location_id" => 1,
                 "quantity" => 1
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["name"], "Inventory Item");
     }
 
     /**
@@ -69,7 +69,7 @@ class InventoryTest extends TestCase
 
         $response = $client->inventory->retrieve(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["name"]);
     }
 
     /**
@@ -85,7 +85,7 @@ class InventoryTest extends TestCase
 
         $response = $client->inventory->all();
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertGreaterThan(1, $response["data"]);
     }
 
     /**
@@ -107,13 +107,13 @@ class InventoryTest extends TestCase
                 "part_number" => "1234",
                 "sku" => "1234",
                 "notes" => "here are some notes",
-                "part_price" => 19.99,
+                "part_price" => "19.99",
                 "location_id" => 1,
                 "quantity" => 1
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["name"], "Inventory Item");
     }
 
     /**
@@ -129,6 +129,6 @@ class InventoryTest extends TestCase
 
         $response = $client->inventory->delete(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["deleted_at"]);
     }
 }

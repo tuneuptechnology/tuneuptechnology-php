@@ -18,13 +18,13 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Sun, 23 May 2021 05:05:53 GMT'
+            Date: 'Sat, 12 Jun 2021 02:37:35 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
-            X-Ratelimit-Remaining: '52'
-            Content-Length: '2009'
-        body: '{"data":{"current_page":1,"data":[{"id":1,"name":"et","quantity":"7","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"237091","sku":"133367","notes":"Quos ipsam nihil est eveniet tempora fuga voluptatem.","part_price":null,"location_id":1},{"id":2,"name":"reprehenderit","quantity":"5","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"863963","sku":"587403","notes":"Ut hic eum quidem voluptatum eius fuga fugiat quia.","part_price":null,"location_id":1},{"id":3,"name":"dolorum","quantity":"8","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"580326","sku":"297643","notes":"Tenetur accusamus sunt sequi.","part_price":null,"location_id":1},{"id":4,"name":"delectus","quantity":"4","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"908776","sku":"877659","notes":"Vel aut id et iure assumenda.","part_price":null,"location_id":1},{"id":5,"name":"voluptatem","quantity":"2","created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"inventory_type_id":1,"part_number":"250990","sku":"585908","notes":"Asperiores nemo tempora et eveniet eveniet et.","part_price":null,"location_id":1},{"id":6,"name":"Inventory Item","quantity":"1","created_at":"2021-05-23 05:05:53","updated_at":"2021-05-23 05:05:53","deleted_at":null,"inventory_type_id":1,"part_number":"1234","sku":"1234","notes":"here are some notes","part_price":"19.99","location_id":1}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Inventory retrieved successfully."}'
+            X-Ratelimit-Remaining: '59'
+            Content-Length: '1719'
+        body: '{"current_page":1,"data":[{"id":1,"name":"ratione","quantity":"8","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"inventory_type_id":1,"part_number":"615584","sku":"571400","notes":"Ab quo perferendis et expedita voluptas eum a.","part_price":null,"location_id":1},{"id":2,"name":"sed","quantity":"9","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"inventory_type_id":1,"part_number":"883292","sku":"983399","notes":"Laudantium molestiae perspiciatis magni quia dicta provident at ut.","part_price":null,"location_id":1},{"id":3,"name":"possimus","quantity":"5","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"inventory_type_id":1,"part_number":"4653","sku":"860100","notes":"Itaque esse illum rem corporis commodi et.","part_price":null,"location_id":1},{"id":4,"name":"modi","quantity":"9","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"inventory_type_id":1,"part_number":"576588","sku":"637805","notes":"Rerum quod molestiae doloremque explicabo.","part_price":null,"location_id":1},{"id":5,"name":"tempore","quantity":"6","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"inventory_type_id":1,"part_number":"219577","sku":"651295","notes":"Quos velit eum nihil reiciendis animi vel harum.","part_price":null,"location_id":1}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/inventory?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/inventory","per_page":20,"prev_page_url":null,"to":5,"total":5}'
         curl_info:
             url: 'http://tuneapp.localhost/api/inventory'
             content_type: application/json
@@ -34,32 +34,32 @@
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.109326
-            namelookup_time: 0.000651
-            connect_time: 0.00077
-            pretransfer_time: 0.000793
+            total_time: 1.055236
+            namelookup_time: 0.002501
+            connect_time: 0.002686
+            pretransfer_time: 0.002751
             size_upload: !!float 0
-            size_download: !!float 2009
-            speed_download: !!float 18431
+            size_download: !!float 1719
+            speed_download: !!float 1629
             speed_upload: !!float 0
-            download_content_length: !!float 2009
+            download_content_length: !!float 1719
             upload_content_length: !!float 0
-            starttransfer_time: 0.109304
+            starttransfer_time: 1.055211
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 49957
+            local_port: 63870
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 770
-            namelookup_time_us: 651
-            pretransfer_time_us: 793
+            connect_time_us: 2686
+            namelookup_time_us: 2501
+            pretransfer_time_us: 2751
             redirect_time_us: 0
-            starttransfer_time_us: 109304
-            total_time_us: 109326
+            starttransfer_time_us: 1055211
+            total_time_us: 1055236

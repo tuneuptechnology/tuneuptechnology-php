@@ -16,4 +16,4 @@ $customer = $client->customers->create(
     ]
 );
 
-echo $customer->getBody();
+echo $customer;

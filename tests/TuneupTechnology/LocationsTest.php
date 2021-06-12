@@ -50,7 +50,7 @@ class LocationsTest extends TestCase
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["name"], "Location Name");
     }
 
     /**
@@ -66,7 +66,7 @@ class LocationsTest extends TestCase
 
         $response = $client->locations->retrieve(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["name"]);
     }
 
     /**
@@ -82,7 +82,7 @@ class LocationsTest extends TestCase
 
         $response = $client->locations->all();
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertGreaterThan(1, $response["data"]);
     }
 
     /**
@@ -107,7 +107,7 @@ class LocationsTest extends TestCase
             ]
         );
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertEquals($response["name"], "Location Name");
     }
 
     /**
@@ -123,6 +123,6 @@ class LocationsTest extends TestCase
 
         $response = $client->locations->delete(1);
 
-        $this->assertEquals($response->getStatusCode(), 200);
+        $this->assertNotNull($response["deleted_at"]);
     }
 }

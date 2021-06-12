@@ -12,7 +12,7 @@
             User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
             Email: ''
             Api-Key: ''
-        body: '{"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"device":"2","imei":10000,"location_id":2}'
+        body: '{"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"device":"iPhone","imei":10000,"location_id":2}'
     response:
         status:
             http_version: '1.1'
@@ -21,48 +21,48 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Sun, 23 May 2021 05:05:55 GMT'
+            Date: 'Sat, 12 Jun 2021 02:37:38 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
-            X-Ratelimit-Remaining: '41'
-            Content-Length: '315'
-        body: '{"data":{"id":1,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:55","deleted_at":null,"device":"2","imei":10000,"location_id":2},"message":"Ticket updated successfully."}'
+            X-Ratelimit-Remaining: '45'
+            Content-Length: '270'
+        body: '{"id":1,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:37:38","deleted_at":null,"device":"iPhone","imei":10000,"location_id":2}'
         curl_info:
             url: 'http://tuneapp.localhost/api/tickets/1'
             content_type: application/json
             http_code: 200
             header_size: 234
-            request_size: 442
+            request_size: 447
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.114206
-            namelookup_time: 0.000648
-            connect_time: 0.000768
-            pretransfer_time: 0.000794
-            size_upload: !!float 170
-            size_download: !!float 315
-            speed_download: !!float 2763
-            speed_upload: !!float 1491
-            download_content_length: !!float 315
-            upload_content_length: !!float 170
-            starttransfer_time: 0.114189
+            total_time: 0.160419
+            namelookup_time: 0.000741
+            connect_time: 0.000861
+            pretransfer_time: 0.000885
+            size_upload: !!float 175
+            size_download: !!float 270
+            speed_download: !!float 1687
+            speed_upload: !!float 1093
+            download_content_length: !!float 270
+            upload_content_length: !!float 175
+            starttransfer_time: 0.160403
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 49969
+            local_port: 63884
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 768
-            namelookup_time_us: 648
-            pretransfer_time_us: 794
+            connect_time_us: 861
+            namelookup_time_us: 741
+            pretransfer_time_us: 885
             redirect_time_us: 0
-            starttransfer_time_us: 114189
-            total_time_us: 114206
+            starttransfer_time_us: 160403
+            total_time_us: 160419

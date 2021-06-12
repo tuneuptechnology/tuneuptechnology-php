@@ -18,48 +18,48 @@
         headers:
             Cache-Control: 'no-cache, private'
             Content-Type: application/json
-            Date: 'Sun, 23 May 2021 05:05:55 GMT'
+            Date: 'Sat, 12 Jun 2021 02:37:37 GMT'
             Server: nginx
             X-Powered-By: PHP/7.4.15
             X-Ratelimit-Limit: '60'
-            X-Ratelimit-Remaining: '42'
-            Transfer-Encoding: chunked
-        body: '{"data":{"current_page":1,"data":[{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"839270","user_id":1,"notes":"Dolor quos non doloribus.","title":"Ipsa et nihil atque expedita quidem.","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"device":"iPhone 12","imei":"945819","location_id":1},{"id":2,"customer_id":1,"ticket_type_id":1,"serial":"592920","user_id":1,"notes":"Delectus odio fugiat facilis et dolores nostrum corporis.","title":"Aliquam voluptate rerum vero qui quo et ducimus enim.","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"device":"iPhone 12","imei":"142573","location_id":1},{"id":3,"customer_id":1,"ticket_type_id":1,"serial":"803486","user_id":1,"notes":"Et quo qui perspiciatis reprehenderit dolorem earum.","title":"Explicabo quod rerum nemo dicta occaecati ad incidunt.","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"device":"iPhone 12","imei":"951207","location_id":1},{"id":4,"customer_id":1,"ticket_type_id":1,"serial":"768967","user_id":1,"notes":"Aut itaque qui asperiores tenetur voluptas praesentium.","title":"Veritatis dolorem delectus architecto dolore.","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"device":"iPhone 12","imei":"188006","location_id":1},{"id":5,"customer_id":1,"ticket_type_id":1,"serial":"350010","user_id":1,"notes":"Nihil optio distinctio a cum repellendus autem consequuntur.","title":"Necessitatibus qui mollitia sint aliquam nihil.","status":1,"created_at":"2021-05-23 05:05:17","updated_at":"2021-05-23 05:05:17","deleted_at":null,"device":"iPhone 12","imei":"543072","location_id":1},{"id":6,"customer_id":2,"ticket_type_id":1,"serial":"10000","user_id":1,"notes":"here are some notes","title":"Fancy Title","status":1,"created_at":"2021-05-23 05:05:54","updated_at":"2021-05-23 05:05:54","deleted_at":null,"device":"2","imei":"10000","location_id":2}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/tickets","per_page":20,"prev_page_url":null,"to":6,"total":6},"message":"Tickets retrieved successfully."}'
+            X-Ratelimit-Remaining: '47'
+            Content-Length: '1898'
+        body: '{"current_page":1,"data":[{"id":1,"customer_id":1,"ticket_type_id":1,"serial":"82238","user_id":1,"notes":"Suscipit est sit consequatur provident assumenda.","title":"Qui dolores qui iusto est ratione.","status":1,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"device":"iPhone 12","imei":"505386","location_id":1},{"id":2,"customer_id":1,"ticket_type_id":1,"serial":"287072","user_id":1,"notes":"Perspiciatis quia consectetur in.","title":"Aut distinctio sit libero non.","status":1,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"device":"iPhone 12","imei":"589458","location_id":1},{"id":3,"customer_id":1,"ticket_type_id":1,"serial":"902811","user_id":1,"notes":"Sint sequi qui eveniet et quia.","title":"Non aliquid minima qui pariatur.","status":1,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"device":"iPhone 12","imei":"594981","location_id":1},{"id":4,"customer_id":1,"ticket_type_id":1,"serial":"939271","user_id":1,"notes":"Voluptate ipsam ut omnis quos.","title":"Et nihil veniam voluptas provident officiis.","status":1,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"device":"iPhone 12","imei":"892312","location_id":1},{"id":5,"customer_id":1,"ticket_type_id":1,"serial":"459537","user_id":1,"notes":"Quas et eos quia ut.","title":"Laboriosam eligendi blanditiis et qui accusantium.","status":1,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"device":"iPhone 12","imei":"279836","location_id":1}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/tickets?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/tickets","per_page":20,"prev_page_url":null,"to":5,"total":5}'
         curl_info:
             url: 'http://tuneapp.localhost/api/tickets'
             content_type: application/json
             http_code: 200
-            header_size: 241
+            header_size: 235
             request_size: 215
             filetime: -1
             ssl_verify_result: 0
             redirect_count: 0
-            total_time: 0.106599
-            namelookup_time: 0.000607
-            connect_time: 0.000714
-            pretransfer_time: 0.000734
+            total_time: 0.129208
+            namelookup_time: 0.000789
+            connect_time: 0.000901
+            pretransfer_time: 0.000922
             size_upload: !!float 0
-            size_download: !!float 2351
-            speed_download: !!float 22179
+            size_download: !!float 1898
+            speed_download: !!float 14713
             speed_upload: !!float 0
-            download_content_length: !!float -1
+            download_content_length: !!float 1898
             upload_content_length: !!float 0
-            starttransfer_time: 0.106581
+            starttransfer_time: 0.12919
             redirect_time: !!float 0
             redirect_url: ''
             primary_ip: 127.0.0.1
             certinfo: {  }
             primary_port: 80
             local_ip: 127.0.0.1
-            local_port: 49968
+            local_port: 63882
             http_version: 2
             protocol: 1
             ssl_verifyresult: 0
             scheme: HTTP
             appconnect_time_us: 0
-            connect_time_us: 714
-            namelookup_time_us: 607
-            pretransfer_time_us: 734
+            connect_time_us: 901
+            namelookup_time_us: 789
+            pretransfer_time_us: 922
             redirect_time_us: 0
-            starttransfer_time_us: 106581
-            total_time_us: 106599
+            starttransfer_time_us: 129190
+            total_time_us: 129208
