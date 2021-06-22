@@ -34,7 +34,7 @@
         "bin-dir": "bin"
     },
     "scripts": {
-        "coverage": "XDEBUG_MODE=coverage ./bin/phpunit --coverage-html clover.html --coverage-clover clover.xml",
+        "coverage": "XDEBUG_MODE=coverage ./bin/phpunit --coverage-html clover.html --coverage-clover build/logs/clover.xml",
         "fix": "./bin/phpcbf",
         "lint": "./bin/phpcs",
         "test": "./bin/phpunit"

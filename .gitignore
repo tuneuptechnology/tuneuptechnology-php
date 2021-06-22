@@ -4,3 +4,4 @@ bin
 *.cache
 clover.xml
 *.html
+build
