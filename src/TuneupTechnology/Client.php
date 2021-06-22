@@ -4,37 +4,62 @@ namespace TuneupTechnology;
 
 class Client
 {
+    public $customers;
+    public $inventory;
+    public $locations;
+    public $tickets;
+
+    public function __construct($email = null, $api_key = null, $base_url = 'https://app.tuneuptechnology.com/api', $timeout = 10)
+    {
+        $this->email = $email;
+        $this->api_key = $api_key;
+        $this->base_url = $base_url;
+        $this->timeout = $timeout;
+        $this->version = '2.0.0';
+        # TODO: Find a better way to share these class variables across the library
+        $this->customers = new Customers($this->email, $this->api_key, $this->base_url, $this->timeout, $this->version);
+        $this->inventory = new Inventory($this->email, $this->api_key, $this->base_url, $this->timeout, $this->version);
+        $this->locations = new Locations($this->email, $this->api_key, $this->base_url, $this->timeout, $this->version);
+        $this->tickets = new Tickets($this->email, $this->api_key, $this->base_url, $this->timeout, $this->version);
+
+        if (!isset($email) or !isset($api_key)) {
+            throw new \Exception('email and api_key are required to create a Client.');
+        }
+    }
+
     /**
      * Setup the API client
      *
-     * @param array $data
+     * @param string $method
      * @param string $endpoint
+     * @param array $data
      * @return mixed
      */
-    public static function make_http_request($data, $endpoint)
+    public function makeHttpRequest($method, $endpoint, $data = null)
     {
-        // Setup variables
-        $base_url = "https://app.tuneuptechnology.com/api";
-        $url = "$base_url/$endpoint";
-        $version = "1.1.0";
-    
-        // Setup cURL
-        $request = curl_init($url);
-        curl_setopt($request, CURLOPT_POST, true);
-        curl_setopt($request, CURLOPT_POSTFIELDS, json_encode($data));
-        curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($request, CURLOPT_TIMEOUT, 10);
+        try {
+            $guzzle_client = new \GuzzleHttp\Client();
 
-        // Setup headers
-        curl_setopt($request, CURLOPT_HTTPHEADER, [
-            "Content-Type: application/json",
-            "User-Agent: TuneupTechnologyApp/PHPClient/$version"
-        ]);
+            $headers = [
+                "Accept" => "application/json",
+                "User-Agent" => "TuneupTechnologyApp/PHPClient/$this->version",
+                "Email" => $this->email,
+                "Api-Key" => $this->api_key,
+            ];
 
-        // Execute cURL request
-        $curl = curl_exec($request);
-        curl_close($request);
-        $response = json_encode(json_decode($curl), JSON_PRETTY_PRINT);
-        return $response;
+            $response = $guzzle_client->request(strtoupper($method), $endpoint, [
+                'headers' => $headers,
+                'timeout' => $this->timeout,
+                'json' => $data,
+            ]);
+        } catch (\GuzzleHttp\Exception\ClientException $error) {
+            return json_decode($error->getResponse()->getBody(), $return = true);
+        } catch (\GuzzleHttp\Exception\RequestException $error) {
+            return json_decode($error->getResponse()->getBody(), $return = true);
+        } catch (\Exception $error) {
+            return $error;
+        }
+
+        return json_decode($response->getBody(), $return = true);
     }
 }

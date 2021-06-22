@@ -1,0 +1,68 @@
+
+-
+    request:
+        method: PATCH
+        url: 'http://tuneapp.localhost/api/locations/1'
+        headers:
+            Host: tuneapp.localhost
+            Expect: ''
+            Accept-Encoding: ''
+            Content-Type: application/json
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+        body: '{"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":84043}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Cache-Control: 'no-cache, private'
+            Content-Type: application/json
+            Date: 'Sat, 12 Jun 2021 02:37:37 GMT'
+            Server: nginx
+            X-Powered-By: PHP/7.4.15
+            X-Ratelimit-Limit: '60'
+            X-Ratelimit-Remaining: '48'
+            Content-Length: '193'
+        body: '{"id":1,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":84043,"created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:37:37","deleted_at":null}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/locations/1'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 371
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.768457
+            namelookup_time: 0.000754
+            connect_time: 0.000871
+            pretransfer_time: 0.000897
+            size_upload: !!float 98
+            size_download: !!float 193
+            speed_download: !!float 251
+            speed_upload: !!float 127
+            download_content_length: !!float 193
+            upload_content_length: !!float 98
+            starttransfer_time: 0.768441
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 63881
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 871
+            namelookup_time_us: 754
+            pretransfer_time_us: 897
+            redirect_time_us: 0
+            starttransfer_time_us: 768441
+            total_time_us: 768457

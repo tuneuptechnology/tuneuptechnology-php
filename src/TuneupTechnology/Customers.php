@@ -4,7 +4,7 @@ namespace TuneupTechnology;
 
 use TuneupTechnology;
 
-class Inventory extends Client
+class Customers extends Client
 {
     public function __construct($email, $api_key, $base_url, $timeout, $version)
     {
@@ -17,42 +17,42 @@ class Inventory extends Client
     }
 
     /**
-     * Create an inventory item
+     * Create a customer
      *
      * @param array $data
      * @return mixed
      */
     public function create($data)
     {
-        $endpoint = "$this->base_url/inventory";
+        $endpoint = "$this->base_url/customers";
         return $this->makeHttpRequest('post', $endpoint, $data);
     }
 
     /**
-     * Retrieve a single inventory record by ID
+     * Retrieve a single customer record by ID
      *
      * @param int $id
      * @return mixed
      */
     public function retrieve($id)
     {
-        $endpoint = "$this->base_url/inventory/$id";
+        $endpoint = "$this->base_url/customers/$id";
         return $this->makeHttpRequest('get', $endpoint);
     }
 
     /**
-     * Retrieve a list of all inventory
+     * Retrieve a list of all customers
      *
      * @return mixed
      */
     public function all()
     {
-        $endpoint = "$this->base_url/inventory";
+        $endpoint = "$this->base_url/customers";
         return $this->makeHttpRequest('get', $endpoint);
     }
 
     /**
-     * Update a single inventory item by ID
+     * Update a single customer by ID
      *
      * @param int $id
      * @param array $data
@@ -60,19 +60,19 @@ class Inventory extends Client
      */
     public function update($id, $data)
     {
-        $endpoint = "$this->base_url/inventory/$id";
+        $endpoint = "$this->base_url/customers/$id";
         return $this->makeHttpRequest('patch', $endpoint, $data);
     }
 
     /**
-     * Delete a single inventory item by ID
+     * Delete a single customer by ID
      *
-     * @param array $id
+     * @param int $id
      * @return mixed
      */
     public function delete($id)
     {
-        $endpoint = "$this->base_url/inventory/$id";
+        $endpoint = "$this->base_url/customers/$id";
         return $this->makeHttpRequest('delete', $endpoint);
     }
 }

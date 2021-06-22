@@ -1,0 +1,65 @@
+
+-
+    request:
+        method: GET
+        url: 'http://tuneapp.localhost/api/customers'
+        headers:
+            Host: tuneapp.localhost
+            Accept-Encoding: ''
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Cache-Control: 'no-cache, private'
+            Content-Type: application/json
+            Date: 'Sat, 12 Jun 2021 02:37:36 GMT'
+            Server: nginx
+            X-Powered-By: PHP/7.4.15
+            X-Ratelimit-Limit: '60'
+            X-Ratelimit-Remaining: '55'
+            Content-Length: '1743'
+        body: '{"current_page":1,"data":[{"id":1,"firstname":"Colten Trantow DVM","lastname":"Christophe Medhurst","email":"dlarkin@example.net","phone":"8018981234","user_id":1,"notes":"Corporis quod dolor atque aliquid.","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"location_id":1},{"id":2,"firstname":"Jamie Legros","lastname":"Jaquelin Kutch","email":"dale23@example.com","phone":"8018981234","user_id":1,"notes":"Et esse dolorem qui nostrum enim.","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"location_id":1},{"id":3,"firstname":"Icie Willms IV","lastname":"Dr. Osbaldo Klocko","email":"jany74@example.net","phone":"8018981234","user_id":1,"notes":"Voluptas commodi est dolorum consequatur sed.","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"location_id":1},{"id":4,"firstname":"Linwood Stroman","lastname":"Therese Wyman Jr.","email":"deshaun.grady@example.net","phone":"8018981234","user_id":1,"notes":"Velit eum qui omnis quis provident.","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"location_id":1},{"id":5,"firstname":"Odessa Gaylord","lastname":"Vena Kertzmann","email":"xgleason@example.com","phone":"8018981234","user_id":1,"notes":"Dignissimos vitae totam laudantium sapiente.","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null,"location_id":1}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/customers?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/customers","per_page":20,"prev_page_url":null,"to":5,"total":5}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/customers'
+            content_type: application/json
+            http_code: 200
+            header_size: 235
+            request_size: 217
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.128666
+            namelookup_time: 0.000822
+            connect_time: 0.000942
+            pretransfer_time: 0.000964
+            size_upload: !!float 0
+            size_download: !!float 1743
+            speed_download: !!float 13617
+            speed_upload: !!float 0
+            download_content_length: !!float 1743
+            upload_content_length: !!float 0
+            starttransfer_time: 0.128649
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 63874
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 942
+            namelookup_time_us: 822
+            pretransfer_time_us: 964
+            redirect_time_us: 0
+            starttransfer_time_us: 128649
+            total_time_us: 128666

@@ -1,0 +1,68 @@
+
+-
+    request:
+        method: POST
+        url: 'http://tuneapp.localhost/api/locations'
+        headers:
+            Host: tuneapp.localhost
+            Expect: ''
+            Accept-Encoding: ''
+            Content-Type: application/json
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+        body: '{"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":84043}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Cache-Control: 'no-cache, private'
+            Content-Type: application/json
+            Date: 'Sat, 12 Jun 2021 02:37:36 GMT'
+            Server: nginx
+            X-Powered-By: PHP/7.4.15
+            X-Ratelimit-Limit: '60'
+            X-Ratelimit-Remaining: '51'
+            Content-Length: '175'
+        body: '{"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":84043,"updated_at":"2021-06-12 02:37:36","created_at":"2021-06-12 02:37:36","id":6}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/locations'
+            content_type: application/json
+            http_code: 200
+            header_size: 234
+            request_size: 368
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.12563
+            namelookup_time: 0.000807
+            connect_time: 0.000942
+            pretransfer_time: 0.001003
+            size_upload: !!float 98
+            size_download: !!float 175
+            speed_download: !!float 1400
+            speed_upload: !!float 784
+            download_content_length: !!float 175
+            upload_content_length: !!float 98
+            starttransfer_time: 0.125616
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 63878
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 942
+            namelookup_time_us: 807
+            pretransfer_time_us: 1003
+            redirect_time_us: 0
+            starttransfer_time_us: 125616
+            total_time_us: 125630

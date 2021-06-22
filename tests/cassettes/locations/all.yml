@@ -1,0 +1,65 @@
+
+-
+    request:
+        method: GET
+        url: 'http://tuneapp.localhost/api/locations'
+        headers:
+            Host: tuneapp.localhost
+            Accept-Encoding: ''
+            Accept: application/json
+            User-Agent: TuneupTechnologyApp/PHPClient/2.0.0
+            Email: ''
+            Api-Key: ''
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Cache-Control: 'no-cache, private'
+            Content-Type: application/json
+            Date: 'Sat, 12 Jun 2021 02:37:37 GMT'
+            Server: nginx
+            X-Powered-By: PHP/7.4.15
+            X-Ratelimit-Limit: '60'
+            X-Ratelimit-Remaining: '49'
+            Content-Length: '1523'
+        body: '{"current_page":1,"data":[{"id":1,"name":"Kuphal and Sons","street":"19507 Ryann Extension","city":"Lake Clark","state":"CT","zip":"38523","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null},{"id":2,"name":"Spencer-McGlynn","street":"4157 Kaelyn Summit Apt. 270","city":"Turnerfort","state":"KY","zip":"89321","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null},{"id":3,"name":"Bahringer and Sons","street":"884 Daniel Light","city":"Omerport","state":"AK","zip":"15190","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null},{"id":4,"name":"Hermann, Bode and Doyle","street":"273 Senger Cape","city":"New Kenchester","state":"AZ","zip":"25116","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null},{"id":5,"name":"Block-Mueller","street":"491 Hyatt Place","city":"Lake Henrimouth","state":"NM","zip":"69630","created_at":"2021-06-12 02:18:14","updated_at":"2021-06-12 02:18:14","deleted_at":null},{"id":6,"name":"Location Name","street":"123 California Ave","city":"Salt Lake","state":"UT","zip":"84043","created_at":"2021-06-12 02:37:36","updated_at":"2021-06-12 02:37:36","deleted_at":null}],"first_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","from":1,"last_page":1,"last_page_url":"http:\/\/tuneapp.localhost\/api\/locations?page=1","next_page_url":null,"path":"http:\/\/tuneapp.localhost\/api\/locations","per_page":20,"prev_page_url":null,"to":6,"total":6}'
+        curl_info:
+            url: 'http://tuneapp.localhost/api/locations'
+            content_type: application/json
+            http_code: 200
+            header_size: 235
+            request_size: 217
+            filetime: -1
+            ssl_verify_result: 0
+            redirect_count: 0
+            total_time: 0.122473
+            namelookup_time: 0.000646
+            connect_time: 0.000839
+            pretransfer_time: 0.000862
+            size_upload: !!float 0
+            size_download: !!float 1523
+            speed_download: !!float 12483
+            speed_upload: !!float 0
+            download_content_length: !!float 1523
+            upload_content_length: !!float 0
+            starttransfer_time: 0.122458
+            redirect_time: !!float 0
+            redirect_url: ''
+            primary_ip: 127.0.0.1
+            certinfo: {  }
+            primary_port: 80
+            local_ip: 127.0.0.1
+            local_port: 63880
+            http_version: 2
+            protocol: 1
+            ssl_verifyresult: 0
+            scheme: HTTP
+            appconnect_time_us: 0
+            connect_time_us: 839
+            namelookup_time_us: 646
+            pretransfer_time_us: 862
+            redirect_time_us: 0
+            starttransfer_time_us: 122458
+            total_time_us: 122473
