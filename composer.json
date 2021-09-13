@@ -1,53 +1,53 @@
 {
-    "name": "tuneuptechnology/tuneuptechnology-php",
-    "description": "The PHP client library for the Tuneup Technology App.",
-    "keywords": [
-        "tuneup",
-        "technology",
-        "app",
-        "client",
-        "library",
-        "php"
-    ],
-    "homepage": "https://github.com/tuneuptechnology/tuneuptechnology-php",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "tuneuptechnology",
-            "email": "tuneuptechnology@gmail.com",
-            "homepage": "https://tuneuptechnology.com"
-        }
-    ],
-    "require": {
-        "php": "^7.3|^8.0",
-        "guzzlehttp/guzzle": "^7.3"
-    },
-    "require-dev": {
-        "allejo/php-vcr-sanitizer": "^1.0.9",
-        "php-coveralls/php-coveralls": "^2.4",
-        "php-vcr/php-vcr": "^1.5",
-        "phpunit/phpunit": "^9.0",
-        "squizlabs/php_codesniffer": "^3.0"
-    },
-    "config": {
-        "bin-dir": "bin"
-    },
-    "scripts": {
-        "coverage": "XDEBUG_MODE=coverage ./bin/phpunit --coverage-html clover.html --coverage-clover build/logs/clover.xml",
-        "fix": "./bin/phpcbf",
-        "lint": "./bin/phpcs",
-        "test": "./bin/phpunit"
-    },
-    "autoload": {
-        "psr-0": {
-            "TuneupTechnology": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-0": {
-            "TuneupTechnology": "tests/TuneupTechnology/"
-        }
-    },
-    "version": "2.0.0"
+  "name": "tuneuptechnology/tuneuptechnology-php",
+  "description": "The PHP client library for the Tuneup Technology App.",
+  "keywords": [
+    "tuneup",
+    "technology",
+    "app",
+    "client",
+    "library",
+    "php"
+  ],
+  "homepage": "https://github.com/tuneuptechnology/tuneuptechnology-php",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tuneuptechnology",
+      "email": "tuneuptechnology@gmail.com",
+      "homepage": "https://tuneuptechnology.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "guzzlehttp/guzzle": "^7.3"
+  },
+  "require-dev": {
+    "allejo/php-vcr-sanitizer": "^1.0.9",
+    "php-coveralls/php-coveralls": "^2.4",
+    "php-vcr/php-vcr": "^1.5",
+    "phpunit/phpunit": "^9.0",
+    "squizlabs/php_codesniffer": "^3.0"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "coverage": "XDEBUG_MODE=coverage ./bin/phpunit --coverage-html clover.html --coverage-clover build/logs/clover.xml",
+    "fix": "./bin/phpcbf",
+    "lint": "./bin/phpcs",
+    "test": "./bin/phpunit"
+  },
+  "autoload": {
+    "psr-0": {
+      "TuneupTechnology": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "TuneupTechnology": "tests/TuneupTechnology/"
+    }
+  },
+  "version": "2.0.0"
 }
