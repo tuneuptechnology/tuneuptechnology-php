@@ -35,7 +35,7 @@ $customer = $client->customers->create(
     ]
 );
 
-echo $customer;
+echo json_encode($customer);
 ```
 
 Other examples can be found in the `/examples` directory. Alter according to your needs.

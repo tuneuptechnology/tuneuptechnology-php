@@ -17,4 +17,4 @@ $customer = $client->customers->update(
     ]
 );
 
-echo $customer;
+echo json_encode($customer);
