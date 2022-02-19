@@ -1,10 +1,10 @@
 <?php
 
-namespace TuneupTechnology;
+namespace TuneupTechnology\Test;
 
 use PHPUnit\Framework\TestCase;
-use VCR\VCR;
 use TuneupTechnology;
+use VCR\VCR;
 
 class InventoryTest extends TestCase
 {
@@ -57,10 +57,10 @@ class InventoryTest extends TestCase
     }
 
     /**
-    * Test retrieving an inventory item
-    *
-    * @return void
-    */
+     * Test retrieving an inventory item
+     *
+     * @return void
+     */
     public function testRetrieve()
     {
         VCR::insertCassette('inventory/retrieve.yml');
@@ -73,10 +73,10 @@ class InventoryTest extends TestCase
     }
 
     /**
-    * Test retrieving all inventory items
-    *
-    * @return void
-    */
+     * Test retrieving all inventory items
+     *
+     * @return void
+     */
     public function testAll()
     {
         VCR::insertCassette('inventory/all.yml');
@@ -89,10 +89,10 @@ class InventoryTest extends TestCase
     }
 
     /**
-    * Test updating an inventory item
-    *
-    * @return void
-    */
+     * Test updating an inventory item
+     *
+     * @return void
+     */
     public function testUpdate()
     {
         VCR::insertCassette('inventory/update.yml');
@@ -117,10 +117,10 @@ class InventoryTest extends TestCase
     }
 
     /**
-    * Test deleting an inventory item
-    *
-    * @return void
-    */
+     * Test deleting an inventory item
+     *
+     * @return void
+     */
     public function testDelete()
     {
         VCR::insertCassette('inventory/delete.yml');

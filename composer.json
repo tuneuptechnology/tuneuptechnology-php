@@ -40,13 +40,13 @@
     "test": "./bin/phpunit"
   },
   "autoload": {
-    "psr-0": {
-      "TuneupTechnology": "src/"
+    "psr-4": {
+      "TuneupTechnology\\": "src/TuneupTechnology/"
     }
   },
   "autoload-dev": {
-    "psr-0": {
-      "TuneupTechnology": "tests/TuneupTechnology/"
+    "psr-4": {
+      "TuneupTechnology\\Test\\": "tests/TuneupTechnology/"
     }
   },
   "version": "2.0.0"

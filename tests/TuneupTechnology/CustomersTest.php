@@ -1,10 +1,10 @@
 <?php
 
-namespace TuneupTechnology;
+namespace TuneupTechnology\Test;
 
 use PHPUnit\Framework\TestCase;
-use VCR\VCR;
 use TuneupTechnology;
+use VCR\VCR;
 
 class CustomersTest extends TestCase
 {
@@ -56,10 +56,10 @@ class CustomersTest extends TestCase
     }
 
     /**
-    * Test retrieving a customer
-    *
-    * @return void
-    */
+     * Test retrieving a customer
+     *
+     * @return void
+     */
     public function testRetrieve()
     {
         VCR::insertCassette('customers/retrieve.yml');
@@ -72,10 +72,10 @@ class CustomersTest extends TestCase
     }
 
     /**
-    * Test retrieving all customers
-    *
-    * @return void
-    */
+     * Test retrieving all customers
+     *
+     * @return void
+     */
     public function testAll()
     {
         VCR::insertCassette('customers/all.yml');
@@ -88,10 +88,10 @@ class CustomersTest extends TestCase
     }
 
     /**
-    * Test updating a customer
-    *
-    * @return void
-    */
+     * Test updating a customer
+     *
+     * @return void
+     */
     public function testUpdate()
     {
         VCR::insertCassette('customers/update.yml');
@@ -115,10 +115,10 @@ class CustomersTest extends TestCase
     }
 
     /**
-    * Test deleting a customer
-    *
-    * @return void
-    */
+     * Test deleting a customer
+     *
+     * @return void
+     */
     public function testDelete()
     {
         VCR::insertCassette('customers/delete.yml');

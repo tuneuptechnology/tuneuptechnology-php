@@ -1,10 +1,10 @@
 <?php
 
-namespace TuneupTechnology;
+namespace TuneupTechnology\Test;
 
 use PHPUnit\Framework\TestCase;
-use VCR\VCR;
 use TuneupTechnology;
+use VCR\VCR;
 
 class LocationsTest extends TestCase
 {
@@ -54,10 +54,10 @@ class LocationsTest extends TestCase
     }
 
     /**
-    * Test retrieving a location
-    *
-    * @return void
-    */
+     * Test retrieving a location
+     *
+     * @return void
+     */
     public function testRetrieve()
     {
         VCR::insertCassette('locations/retrieve.yml');
@@ -70,10 +70,10 @@ class LocationsTest extends TestCase
     }
 
     /**
-    * Test retrieving all locations
-    *
-    * @return void
-    */
+     * Test retrieving all locations
+     *
+     * @return void
+     */
     public function testAll()
     {
         VCR::insertCassette('locations/all.yml');
@@ -86,10 +86,10 @@ class LocationsTest extends TestCase
     }
 
     /**
-    * Test updating a location
-    *
-    * @return void
-    */
+     * Test updating a location
+     *
+     * @return void
+     */
     public function testUpdate()
     {
         VCR::insertCassette('locations/update.yml');
@@ -111,10 +111,10 @@ class LocationsTest extends TestCase
     }
 
     /**
-    * Test deleting a location
-    *
-    * @return void
-    */
+     * Test deleting a location
+     *
+     * @return void
+     */
     public function testDelete()
     {
         VCR::insertCassette('locations/delete.yml');
