@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.0
+          php-version: 8.1
       - name: Install Composer
         run: composer self-update
       - name: Install Dependencies
@@ -22,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-version: [7.3, 7.4, 8.0]
+        php-version: [7.3, 7.4, 8.0, 8.1]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
