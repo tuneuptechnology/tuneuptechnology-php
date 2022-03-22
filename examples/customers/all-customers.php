@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$client = new TuneupTechnology\Client(getenv("API_EMAIL"), getenv("API_KEY"));
+$client = new TuneupTechnology\Client(getenv('API_EMAIL'), getenv('API_KEY'));
 
 $customers = $client->customers->all();
 
